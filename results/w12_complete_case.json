@@ -1,0 +1,101 @@
+{
+  "source": "w12_predictions_formal.csv joined to manifest_features.csv on pose_key+method; complete-case = pb_pass_rate not missing (14 rows excluded)",
+  "reviewer_authoritative": {
+    "n": 132,
+    "auroc": 0.4341,
+    "brier": 0.1591
+  },
+  "local_reproduction": {
+    "n": 132,
+    "n_positive": 19,
+    "auroc": 0.4331625523986958,
+    "brier": 0.15936668995801972
+  },
+  "note": "The primary 146-row result treats 14 non-assessable rows (pb_pass_rate missing / no reference coordinates) as negative evaluation labels; the complete-case result is materially lower. Report both and state that the AUROC criterion is inconclusive underpowered, while the |rho| criterion is decisive.",
+  "missing_rows": [
+    {
+      "pose_key": "AcrB_Ec|9BFH|A1AN8|vina",
+      "method": "vina",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFM|A1AON|vina",
+      "method": "vina",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFN|A1AOE|vina",
+      "method": "vina",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFT|A1AOF|vina",
+      "method": "vina",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFH|A1AN8|vinardo",
+      "method": "vinardo",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFM|A1AON|vinardo",
+      "method": "vinardo",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFN|A1AOE|vinardo",
+      "method": "vinardo",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFT|A1AOF|vinardo",
+      "method": "vinardo",
+      "rmsd_manifest": "NA(no_reference_coords)",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "MsbA_Ec|7SEL|95X|boltz2|s0",
+      "method": "boltz2",
+      "rmsd_manifest": "1.935",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "MsbA_Ec|7SEL|95X|boltz2|s1",
+      "method": "boltz2",
+      "rmsd_manifest": "1.113",
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFH|A1AN8|vina_afdb",
+      "method": "vina_afdb",
+      "rmsd_manifest": NaN,
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFM|A1AON|vina_afdb",
+      "method": "vina_afdb",
+      "rmsd_manifest": NaN,
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFN|A1AOE|vina_afdb",
+      "method": "vina_afdb",
+      "rmsd_manifest": NaN,
+      "pb_pass_rate": NaN
+    },
+    {
+      "pose_key": "AcrB_Ec|9BFT|A1AOF|vina_afdb",
+      "method": "vina_afdb",
+      "rmsd_manifest": NaN,
+      "pb_pass_rate": NaN
+    }
+  ]
+}

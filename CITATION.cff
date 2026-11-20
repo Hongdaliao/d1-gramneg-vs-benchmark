@@ -1,0 +1,13 @@
+﻿cff-version: 1.2.0
+message: "If you use this benchmark, please cite the manuscript."
+title: "Benchmarking structure-based virtual screening across Gram-negative antibacterial targets"
+authors:
+  - family-names: Zhao
+    given-names: Yutao
+    orcid: "https://orcid.org/0000-0002-9917-3264"
+  - family-names: Liao
+    given-names: Hongda
+    orcid: "https://orcid.org/0009-0001-6861-7600"
+version: 1.0.0
+date-released: 2026-11-20
+license: MIT

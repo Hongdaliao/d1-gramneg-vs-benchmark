@@ -1,0 +1,691 @@
+{
+  "task": "W12 calibration gate (task-36)",
+  "tag": "formal",
+  "dry_run": false,
+  "analysis_plan": "results/maes/w12/W12_ANALYSIS_PLAN.md",
+  "readiness": {
+    "n_rows": 146,
+    "n_unique_pose_keys": 146,
+    "methods_available": [
+      "boltz2",
+      "vina",
+      "vina_afdb",
+      "vinardo"
+    ],
+    "n_methods": 4,
+    "methods_note": "Vinardo is a second scoring function on the same Vina poses; method diversity requires Boltz-2/other pose generators",
+    "features_partial": false,
+    "missing_features": []
+  },
+  "manifest_sha256": "e4ae5c23461474f773a016ec415e9da8e5dd6ff10bbef55eda73c726cb4fa3ca",
+  "afdb_excluded_by_value": {
+    "nan": 106,
+    "True": 28,
+    "False": 12
+  },
+  "afdb_usable_rows": 12,
+  "afdb_excluded_rows": 28,
+  "n": 146,
+  "n_pose_observations": 146,
+  "n_unique_pose_keys": 146,
+  "n_unique_pose_key_method": 146,
+  "n_duplicates": 0,
+  "n_methods": 4,
+  "methods": [
+    "boltz2",
+    "vina",
+    "vina_afdb",
+    "vinardo"
+  ],
+  "phi_source_by_method": {
+    "boltz2": {
+      "reference_structure": 26
+    },
+    "vina": {
+      "reference_structure": 40
+    },
+    "vina_afdb": {
+      "reference_structure": 40
+    },
+    "vinardo": {
+      "reference_structure": 40
+    }
+  },
+  "features_partial": false,
+  "missing_features": [],
+  "primary": {
+    "label": "V+M (primary; S neutral for reference phi)",
+    "metrics": {
+      "auroc_primary": 0.4956485702445089,
+      "brier_primary": 0.14510892943874523,
+      "ece_primary": 0.12420357310809842,
+      "rho_maes_rmsd": -0.0745122157034245,
+      "n_eval": 146,
+      "n_eval_positive": 19,
+      "rho_maes_rmsd_ci95": [
+        -0.30151273076381085,
+        0.16148198458621854
+      ]
+    },
+    "wild_cluster_bootstrap": {
+      "auc": 0.4956485702445089,
+      "ci_lo": 0.3182415270647716,
+      "ci_hi": 0.6721692950311109,
+      "n_boot": 4999,
+      "n_clusters": 40,
+      "method": "wild cluster bootstrap (DeLong influence, Rademacher)"
+    },
+    "rho_cluster_bootstrap": {
+      "rho": -0.0745122157034245,
+      "ci_lo": -0.30151273076381085,
+      "ci_hi": 0.16148198458621854,
+      "n_boot": 2000,
+      "method": "cluster bootstrap over systems/CF"
+    },
+    "reliability_bins": [
+      {
+        "bin": 0,
+        "mean_pred": 0.14024393659865947,
+        "observed": 0.1,
+        "n": 30
+      },
+      {
+        "bin": 1,
+        "mean_pred": 0.1881909489428508,
+        "observed": 0.1724137931034483,
+        "n": 29
+      },
+      {
+        "bin": 2,
+        "mean_pred": 0.20389170325019623,
+        "observed": 0.10344827586206896,
+        "n": 29
+      },
+      {
+        "bin": 3,
+        "mean_pred": 0.2706379182262575,
+        "observed": 0.20689655172413793,
+        "n": 29
+      },
+      {
+        "bin": 4,
+        "mean_pred": 0.47267265633319844,
+        "observed": 0.06896551724137931,
+        "n": 29
+      }
+    ],
+    "strata": {
+      "method": [
+        {
+          "stratum": "boltz2",
+          "n": 26,
+          "auroc": 0.54,
+          "rho_rmsd": -0.08072920570157627
+        },
+        {
+          "stratum": "vina",
+          "n": 40,
+          "auroc": 0.5720720720720721,
+          "rho_rmsd": -0.15356385565935785
+        },
+        {
+          "stratum": "vina_afdb",
+          "n": 40,
+          "auroc": 0.4538690476190476,
+          "rho_rmsd": 0.3427655681330349
+        },
+        {
+          "stratum": "vinardo",
+          "n": 40,
+          "auroc": 0.5720720720720721,
+          "rho_rmsd": -0.15356385565935785
+        }
+      ],
+      "target": [
+        {
+          "stratum": "AcrB_Ec",
+          "n": 118,
+          "auroc": 0.5575,
+          "rho_rmsd": -0.1806089489529404
+        },
+        {
+          "stratum": "LptB_Ec",
+          "n": 5,
+          "auroc": NaN,
+          "note": "too few/one-class"
+        },
+        {
+          "stratum": "MexB_Pa",
+          "n": 3,
+          "auroc": NaN,
+          "note": "too few/one-class"
+        },
+        {
+          "stratum": "MsbA_Ec",
+          "n": 5,
+          "auroc": NaN,
+          "note": "too few/one-class"
+        },
+        {
+          "stratum": "PBP3_Pa",
+          "n": 15,
+          "auroc": 0.10714285714285714,
+          "rho_rmsd": 0.8105336714854481
+        }
+      ],
+      "receptor_source": [
+        {
+          "stratum": "holo",
+          "n": 80,
+          "auroc": 0.5720720720720721,
+          "rho_rmsd": -0.15356385565935785
+        },
+        {
+          "stratum": "predicted_afdb",
+          "n": 40,
+          "auroc": 0.4538690476190476,
+          "rho_rmsd": 0.3427655681330349
+        },
+        {
+          "stratum": "predicted_boltz2",
+          "n": 26,
+          "auroc": 0.54,
+          "rho_rmsd": -0.08072920570157627
+        }
+      ]
+    },
+    "calibrator": "platt",
+    "calibration_metadata": {
+      "maes_version": "1.0.0",
+      "n_fit": 146,
+      "n_calibration_positive": 37,
+      "n_calibration_negative": 109,
+      "calibration_positive_rate": 0.2534246575342466,
+      "calibrator": "platt",
+      "calibrator_fallback_reason": "",
+      "calibrator_policy": {
+        "primary": "platt",
+        "requested": "platt",
+        "isotonic_min_positives": 100,
+        "isotonic_gate_applied": false
+      },
+      "weights": {
+        "V": 0.4999995,
+        "M": 0.4999995,
+        "S": 1e-06
+      },
+      "weights_protocol": {
+        "scheme": "fixed a-priori config weights (V=M=S=1/3 in v1.0)",
+        "entropy_weights_used_in_fit": false,
+        "frozen_at_inference": true
+      },
+      "combine": "geometric",
+      "label_protocol": {
+        "calibration_label": "RMSD < 2.0 A AND PoseBusters pass",
+        "evaluation_primary": "RMSD < 1.0 A",
+        "evaluation_secondary": "PLIF/contact recovery >= 0.8",
+        "shared_threshold": false,
+        "strictly_independent": true,
+        "protocol": "A2 fix: calibration label is built from RMSD+PoseBusters, evaluation labels are built from a stricter RMSD cut and from PLIF/contact recovery; the two label families are never derived from each other."
+      },
+      "label_fingerprints": {
+        "calibration": "4de34fb172ab828bfe21c0a6dab9350e4dbb5eb3530fc7172ac4999f33767c5a",
+        "evaluation_primary": "583d5faef3f4bd0d61c5546f635f351d2148b0433194b6f1c0b2f10841cf9cbc",
+        "evaluation_secondary": "f050e04550792e5b42bd4bc0be751d3ed8170ce95d4826b2901100bb40c36f0a"
+      },
+      "evaluation_secondary_independent": true,
+      "monotone": true
+    },
+    "cv": {
+      "n_splits": 5,
+      "folds": [
+        {
+          "fold": 0,
+          "n_train": 116,
+          "n_test": 30,
+          "fit_ok": true
+        },
+        {
+          "fold": 1,
+          "n_train": 116,
+          "n_test": 30,
+          "fit_ok": true
+        },
+        {
+          "fold": 2,
+          "n_train": 116,
+          "n_test": 30,
+          "fit_ok": true
+        },
+        {
+          "fold": 3,
+          "n_train": 118,
+          "n_test": 28,
+          "fit_ok": true
+        },
+        {
+          "fold": 4,
+          "n_train": 118,
+          "n_test": 28,
+          "fit_ok": true
+        }
+      ]
+    }
+  },
+  "exploratory": {
+    "label": "V+M+S (exploratory; S axis limited)",
+    "metrics": {
+      "auroc_primary": 0.49481972648155825,
+      "brier_primary": 0.14499301327589176,
+      "ece_primary": 0.12422481366898355,
+      "rho_maes_rmsd": -0.07174534999034281,
+      "n_eval": 146,
+      "n_eval_positive": 19,
+      "rho_maes_rmsd_ci95": [
+        -0.3006817131801499,
+        0.1658498591116851
+      ]
+    },
+    "wild_cluster_bootstrap": {
+      "auc": 0.49481972648155825,
+      "ci_lo": 0.3180274892405741,
+      "ci_hi": 0.6712788289842507,
+      "n_boot": 4999,
+      "n_clusters": 40,
+      "method": "wild cluster bootstrap (DeLong influence, Rademacher)"
+    },
+    "rho_cluster_bootstrap": {
+      "rho": -0.07174534999034281,
+      "ci_lo": -0.3006817131801499,
+      "ci_hi": 0.1658498591116851,
+      "n_boot": 2000,
+      "method": "cluster bootstrap over systems/CF"
+    },
+    "reliability_bins": [
+      {
+        "bin": 0,
+        "mean_pred": 0.14630391776220425,
+        "observed": 0.1,
+        "n": 30
+      },
+      {
+        "bin": 1,
+        "mean_pred": 0.18664691440420395,
+        "observed": 0.1724137931034483,
+        "n": 29
+      },
+      {
+        "bin": 2,
+        "mean_pred": 0.20259589217703305,
+        "observed": 0.10344827586206896,
+        "n": 29
+      },
+      {
+        "bin": 3,
+        "mean_pred": 0.2695902346140212,
+        "observed": 0.20689655172413793,
+        "n": 29
+      },
+      {
+        "bin": 4,
+        "mean_pred": 0.4703981747635512,
+        "observed": 0.06896551724137931,
+        "n": 29
+      }
+    ],
+    "strata": {
+      "method": [
+        {
+          "stratum": "boltz2",
+          "n": 26,
+          "auroc": 0.54,
+          "rho_rmsd": -0.08072920570157627
+        },
+        {
+          "stratum": "vina",
+          "n": 40,
+          "auroc": 0.5720720720720721,
+          "rho_rmsd": -0.15356385565935785
+        },
+        {
+          "stratum": "vina_afdb",
+          "n": 40,
+          "auroc": 0.4538690476190476,
+          "rho_rmsd": 0.3427655681330349
+        },
+        {
+          "stratum": "vinardo",
+          "n": 40,
+          "auroc": 0.5720720720720721,
+          "rho_rmsd": -0.15356385565935785
+        }
+      ],
+      "target": [
+        {
+          "stratum": "AcrB_Ec",
+          "n": 118,
+          "auroc": 0.5575,
+          "rho_rmsd": -0.1806089489529404
+        },
+        {
+          "stratum": "LptB_Ec",
+          "n": 5,
+          "auroc": NaN,
+          "note": "too few/one-class"
+        },
+        {
+          "stratum": "MexB_Pa",
+          "n": 3,
+          "auroc": NaN,
+          "note": "too few/one-class"
+        },
+        {
+          "stratum": "MsbA_Ec",
+          "n": 5,
+          "auroc": NaN,
+          "note": "too few/one-class"
+        },
+        {
+          "stratum": "PBP3_Pa",
+          "n": 15,
+          "auroc": 0.10714285714285714,
+          "rho_rmsd": 0.8105336714854481
+        }
+      ],
+      "receptor_source": [
+        {
+          "stratum": "holo",
+          "n": 80,
+          "auroc": 0.5720720720720721,
+          "rho_rmsd": -0.15356385565935785
+        },
+        {
+          "stratum": "predicted_afdb",
+          "n": 40,
+          "auroc": 0.4538690476190476,
+          "rho_rmsd": 0.3427655681330349
+        },
+        {
+          "stratum": "predicted_boltz2",
+          "n": 26,
+          "auroc": 0.54,
+          "rho_rmsd": -0.08072920570157627
+        }
+      ]
+    },
+    "calibrator": "platt",
+    "calibration_metadata": {
+      "maes_version": "1.0.0",
+      "n_fit": 146,
+      "n_calibration_positive": 37,
+      "n_calibration_negative": 109,
+      "calibration_positive_rate": 0.2534246575342466,
+      "calibrator": "platt",
+      "calibrator_fallback_reason": "",
+      "calibrator_policy": {
+        "primary": "platt",
+        "requested": "platt",
+        "isotonic_min_positives": 100,
+        "isotonic_gate_applied": false
+      },
+      "weights": {
+        "V": 0.3333333333333333,
+        "M": 0.3333333333333333,
+        "S": 0.3333333333333333
+      },
+      "weights_protocol": {
+        "scheme": "fixed a-priori config weights (V=M=S=1/3 in v1.0)",
+        "entropy_weights_used_in_fit": false,
+        "frozen_at_inference": true
+      },
+      "combine": "geometric",
+      "label_protocol": {
+        "calibration_label": "RMSD < 2.0 A AND PoseBusters pass",
+        "evaluation_primary": "RMSD < 1.0 A",
+        "evaluation_secondary": "PLIF/contact recovery >= 0.8",
+        "shared_threshold": false,
+        "strictly_independent": true,
+        "protocol": "A2 fix: calibration label is built from RMSD+PoseBusters, evaluation labels are built from a stricter RMSD cut and from PLIF/contact recovery; the two label families are never derived from each other."
+      },
+      "label_fingerprints": {
+        "calibration": "4de34fb172ab828bfe21c0a6dab9350e4dbb5eb3530fc7172ac4999f33767c5a",
+        "evaluation_primary": "583d5faef3f4bd0d61c5546f635f351d2148b0433194b6f1c0b2f10841cf9cbc",
+        "evaluation_secondary": "f050e04550792e5b42bd4bc0be751d3ed8170ce95d4826b2901100bb40c36f0a"
+      },
+      "evaluation_secondary_independent": true,
+      "monotone": true
+    },
+    "cv": {
+      "n_splits": 5,
+      "folds": [
+        {
+          "fold": 0,
+          "n_train": 116,
+          "n_test": 30,
+          "fit_ok": true
+        },
+        {
+          "fold": 1,
+          "n_train": 116,
+          "n_test": 30,
+          "fit_ok": true
+        },
+        {
+          "fold": 2,
+          "n_train": 116,
+          "n_test": 30,
+          "fit_ok": true
+        },
+        {
+          "fold": 3,
+          "n_train": 118,
+          "n_test": 28,
+          "fit_ok": true
+        },
+        {
+          "fold": 4,
+          "n_train": 118,
+          "n_test": 28,
+          "fit_ok": true
+        }
+      ]
+    }
+  },
+  "cv": {
+    "n_splits": 5,
+    "folds": [
+      {
+        "fold": 0,
+        "n_train": 116,
+        "n_test": 30,
+        "fit_ok": true
+      },
+      {
+        "fold": 1,
+        "n_train": 116,
+        "n_test": 30,
+        "fit_ok": true
+      },
+      {
+        "fold": 2,
+        "n_train": 116,
+        "n_test": 30,
+        "fit_ok": true
+      },
+      {
+        "fold": 3,
+        "n_train": 118,
+        "n_test": 28,
+        "fit_ok": true
+      },
+      {
+        "fold": 4,
+        "n_train": 118,
+        "n_test": 28,
+        "fit_ok": true
+      }
+    ]
+  },
+  "metrics": {
+    "auroc_primary": 0.4956485702445089,
+    "brier_primary": 0.14510892943874523,
+    "ece_primary": 0.12420357310809842,
+    "rho_maes_rmsd": -0.0745122157034245,
+    "n_eval": 146,
+    "n_eval_positive": 19,
+    "rho_maes_rmsd_ci95": [
+      -0.30151273076381085,
+      0.16148198458621854
+    ]
+  },
+  "wild_cluster_bootstrap": {
+    "auc": 0.4956485702445089,
+    "ci_lo": 0.3182415270647716,
+    "ci_hi": 0.6721692950311109,
+    "n_boot": 4999,
+    "n_clusters": 40,
+    "method": "wild cluster bootstrap (DeLong influence, Rademacher)"
+  },
+  "strata": {
+    "method": [
+      {
+        "stratum": "boltz2",
+        "n": 26,
+        "auroc": 0.54,
+        "rho_rmsd": -0.08072920570157627
+      },
+      {
+        "stratum": "vina",
+        "n": 40,
+        "auroc": 0.5720720720720721,
+        "rho_rmsd": -0.15356385565935785
+      },
+      {
+        "stratum": "vina_afdb",
+        "n": 40,
+        "auroc": 0.4538690476190476,
+        "rho_rmsd": 0.3427655681330349
+      },
+      {
+        "stratum": "vinardo",
+        "n": 40,
+        "auroc": 0.5720720720720721,
+        "rho_rmsd": -0.15356385565935785
+      }
+    ],
+    "target": [
+      {
+        "stratum": "AcrB_Ec",
+        "n": 118,
+        "auroc": 0.5575,
+        "rho_rmsd": -0.1806089489529404
+      },
+      {
+        "stratum": "LptB_Ec",
+        "n": 5,
+        "auroc": NaN,
+        "note": "too few/one-class"
+      },
+      {
+        "stratum": "MexB_Pa",
+        "n": 3,
+        "auroc": NaN,
+        "note": "too few/one-class"
+      },
+      {
+        "stratum": "MsbA_Ec",
+        "n": 5,
+        "auroc": NaN,
+        "note": "too few/one-class"
+      },
+      {
+        "stratum": "PBP3_Pa",
+        "n": 15,
+        "auroc": 0.10714285714285714,
+        "rho_rmsd": 0.8105336714854481
+      }
+    ],
+    "receptor_source": [
+      {
+        "stratum": "holo",
+        "n": 80,
+        "auroc": 0.5720720720720721,
+        "rho_rmsd": -0.15356385565935785
+      },
+      {
+        "stratum": "predicted_afdb",
+        "n": 40,
+        "auroc": 0.4538690476190476,
+        "rho_rmsd": 0.3427655681330349
+      },
+      {
+        "stratum": "predicted_boltz2",
+        "n": 26,
+        "auroc": 0.54,
+        "rho_rmsd": -0.08072920570157627
+      }
+    ]
+  },
+  "calibrator": "platt",
+  "calibration_metadata": {
+    "maes_version": "1.0.0",
+    "n_fit": 146,
+    "n_calibration_positive": 37,
+    "n_calibration_negative": 109,
+    "calibration_positive_rate": 0.2534246575342466,
+    "calibrator": "platt",
+    "calibrator_fallback_reason": "",
+    "calibrator_policy": {
+      "primary": "platt",
+      "requested": "platt",
+      "isotonic_min_positives": 100,
+      "isotonic_gate_applied": false
+    },
+    "weights": {
+      "V": 0.4999995,
+      "M": 0.4999995,
+      "S": 1e-06
+    },
+    "weights_protocol": {
+      "scheme": "fixed a-priori config weights (V=M=S=1/3 in v1.0)",
+      "entropy_weights_used_in_fit": false,
+      "frozen_at_inference": true
+    },
+    "combine": "geometric",
+    "label_protocol": {
+      "calibration_label": "RMSD < 2.0 A AND PoseBusters pass",
+      "evaluation_primary": "RMSD < 1.0 A",
+      "evaluation_secondary": "PLIF/contact recovery >= 0.8",
+      "shared_threshold": false,
+      "strictly_independent": true,
+      "protocol": "A2 fix: calibration label is built from RMSD+PoseBusters, evaluation labels are built from a stricter RMSD cut and from PLIF/contact recovery; the two label families are never derived from each other."
+    },
+    "label_fingerprints": {
+      "calibration": "4de34fb172ab828bfe21c0a6dab9350e4dbb5eb3530fc7172ac4999f33767c5a",
+      "evaluation_primary": "583d5faef3f4bd0d61c5546f635f351d2148b0433194b6f1c0b2f10841cf9cbc",
+      "evaluation_secondary": "f050e04550792e5b42bd4bc0be751d3ed8170ce95d4826b2901100bb40c36f0a"
+    },
+    "evaluation_secondary_independent": true,
+    "monotone": true
+  },
+  "go_criteria": {
+    "auroc_ge_0_65": false,
+    "abs_rho_ge_0_40": false,
+    "n_pose_observations_ge_100": true,
+    "n_methods_ge_3": true,
+    "features_complete": true
+  },
+  "verdict": "NO_GO",
+  "go": false,
+  "no_go_plan": "If No-go: MAES is reported descriptively only (no Go claim); calibration/reliability stays in SI; MAES is not used for method ranking. Q2 fallback: keep the two-regime benchmark + per-target AUC/EF5/CI and failure-mode analyses as the primary contribution; MAES appears as an exploratory pose-quality score with explicit limitations.",
+  "caveats": [
+    "primary analysis is V+M; reference-structure S is neutral and S is exploratory only",
+    "Vinardo is a second scoring function on the same Vina poses; method diversity requires Boltz-2/other engines",
+    "grouped CV by system; wild cluster bootstrap by system/CF"
+  ],
+  "generated_at": "2026-11-19T09:19:00",
+  "report_json": "D:\\harness\\projects\\d1_gramneg_vs\\results\\maes\\w12\\w12_report_formal.json",
+  "metrics_csv": "D:\\harness\\projects\\d1_gramneg_vs\\results\\maes\\w12\\w12_metrics_formal.csv",
+  "predictions_csv": "D:\\harness\\projects\\d1_gramneg_vs\\results\\maes\\w12\\w12_predictions_formal.csv",
+  "figure_png": "D:\\harness\\projects\\d1_gramneg_vs\\figures\\fig6_w12_calibration_formal.png"
+}

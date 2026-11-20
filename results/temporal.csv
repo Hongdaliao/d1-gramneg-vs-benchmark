@@ -1,0 +1,10 @@
+target,n_test,n_novel,n_decoy,auc_full,ef5_full,auc_novel,ef5_novel,delta_auc,delta_ef5,auc_full_ci_lo,auc_full_ci_hi,auc_novel_ci_lo,auc_novel_ci_hi,delta_auc_ci_lo,delta_auc_ci_hi,delta_ef5_ci_lo,delta_ef5_ci_hi,n_boot_nonempty,note
+LpxC_Ec,13,6,3423,0.515641,0.0,0.53905,0.0,0.023409,0.0,0.398835,0.62373,0.353344,0.69304,-0.104258,0.1655,0.0,0.0,1993,novel-scaffold subset; decoys shared; cluster bootstrap
+LpxC_Pa,28,24,6518,0.85617,3.574705,0.850814,4.167941,-0.005357,0.593236,0.781579,0.912659,0.76592,0.915307,-0.02283,0.00681,0.033166,1.660116,2000,novel-scaffold subset; decoys shared; cluster bootstrap
+DHFR_Ec,39,23,6671,0.8251,8.704976,0.908726,11.294225,0.083625,2.589249,0.761463,0.885386,0.85724,0.955177,0.030997,0.14269,0.086857,5.522193,2000,novel-scaffold subset; decoys shared; cluster bootstrap
+Gyrase_Ec,73,44,5893,0.477355,1.096994,0.330251,0.0,-0.147104,-1.096994,0.407107,0.549671,0.250668,0.416907,-0.212097,-0.088773,-2.288452,-0.263286,2000,novel-scaffold subset; decoys shared; cluster bootstrap
+GyrA_Ec,9,9,856,0.494094,0.0,0.494094,0.0,0.0,0.0,0.352778,0.619147,0.352778,0.619147,0.0,0.0,0.0,0.0,2000,novel-scaffold subset; decoys shared; cluster bootstrap
+GyrB_Ec,19,18,1052,0.634631,0.0,0.659854,0.0,0.025223,0.0,0.545511,0.723694,0.582427,0.739415,0.0,0.082364,0.0,0.0,2000,novel-scaffold subset; decoys shared; cluster bootstrap
+FabI_Ec,10,6,1059,0.673702,0.0,0.695231,0.0,0.02153,0.0,0.542017,0.793098,0.484023,0.877749,-0.085444,0.133772,0.0,0.0,1995,novel-scaffold subset; decoys shared; cluster bootstrap
+TEM1_Ec,33,31,894,0.375822,0.610672,0.394494,0.648668,0.018672,0.037996,0.291548,0.465417,0.305605,0.490128,0.0,0.053454,0.0,0.100446,2000,novel-scaffold subset; decoys shared; cluster bootstrap
+LepB_Ec,1,1,60,0.233333,0.0,0.233333,0.0,0.0,0.0,0.1,0.35,0.1,0.35,0.0,0.0,0.0,0.0,1389,novel-scaffold subset; decoys shared; cluster bootstrap resamples active/decoys clusters; n_novel<5 descriptive only

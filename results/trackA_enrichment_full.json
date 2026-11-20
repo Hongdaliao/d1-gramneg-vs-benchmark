@@ -1,0 +1,2610 @@
+{
+  "tag": "full",
+  "generated_at": "2026-11-18T11:22:45",
+  "scores_dir": "..\\results\\trackA\\full",
+  "n_files": 9,
+  "n_rows_long": 28136,
+  "incomplete": false,
+  "incomplete_targets": [],
+  "dry_run": false,
+  "entries": [
+    {
+      "target": "DHFR_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "none",
+      "metal_stratum": "non-metal",
+      "panel_role": "main",
+      "auxiliary": false,
+      "n": 7054,
+      "n_active": 383,
+      "n_decoy": 6671,
+      "ef1_percent": 2.0752399514580957,
+      "ef1_allowed": true,
+      "ef1_suppressed": false,
+      "primary_metric": "EF1%",
+      "ef5_percent": 1.8261229742823544,
+      "bedroc20": 0.13140504285733898,
+      "auc": 0.6659724703746742,
+      "top10_actives": 1.0,
+      "n_box_clipped": 0,
+      "n_box_clipped_actives": 0,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 383,
+      "n_act_after_box_clipped_exclusion": 383,
+      "box_clipped": false,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 13,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 13,
+      "n_non_ok_other": 1,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 1,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 0,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": null,
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 383,
+      "n_act_after_prep_missing": 383,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 17.418,
+      "decoy_ratio_planned": 17.454,
+      "n_act_metadata": 383,
+      "n_dec_metadata": 6685,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "b4a51a8f6f5fefd7b2fd6dc09cea542a00325fdf6b0d3defe8b96cc7f4298488",
+      "exhaustiveness": 4,
+      "box_size_A": 22,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\DHFR_Ec_decoys_s1.csv",
+      "n_inference_clusters": 383,
+      "n_active_clusters": 383,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.6422515837401608,
+      "auc_ci_hi": 0.6885286517255927,
+      "ef5_ci_lo": 1.3043595662659795,
+      "ef5_ci_hi": 2.2960350055428327,
+      "bedroc_ci_lo": 0.10528867474494243,
+      "bedroc_ci_hi": 0.15840739109002508,
+      "ef1_ci_lo": 0.7872048473152458,
+      "ef1_ci_hi": 3.647642775714338,
+      "auc_ci_ligand_lo": 0.642811698782388,
+      "auc_ci_ligand_hi": 0.6886393013957697,
+      "ef5_ci_ligand_lo": 1.2754837036677127,
+      "ef5_ci_ligand_hi": 2.3399757758647857,
+      "bedroc_ci_ligand_lo": 0.10296271706914682,
+      "bedroc_ci_ligand_hi": 0.16249503429515313,
+      "p_auc": 1.0073136950840809e-26,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.6672209349733574,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.6713942800534232,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.6972598663666519,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.6330086584999973,
+          "coverage": 0.6665721576410547,
+          "n_bins_used": 2
+        }
+      },
+      "auc_property_matched": 0.6483020075043661,
+      "property_delta_vs_raw": {
+        "mw": 0.005421809678748946,
+        "logp": 0.03128739599197772,
+        "hbd": -0.032963811874676896,
+        "stratified_mean": 0.0012484645986832188,
+        "matched": -0.017670462870308157
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\DHFR_Ec\\manifest.csv",
+      "n_input_rows": 7054,
+      "source_files": [
+        "DHFR_Ec_scores.csv"
+      ],
+      "p_auc_bh": 2.266455813939182e-26
+    },
+    {
+      "target": "FabI_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "none",
+      "metal_stratum": "non-metal",
+      "panel_role": "main",
+      "auxiliary": false,
+      "n": 1112,
+      "n_active": 53,
+      "n_decoy": 1059,
+      "ef1_percent": null,
+      "ef1_allowed": false,
+      "ef1_suppressed": true,
+      "primary_metric": "EF5%",
+      "ef5_percent": 0.37466307277628036,
+      "bedroc20": 0.052011635527783914,
+      "auc": 0.6059917686674863,
+      "top10_actives": 0.0,
+      "n_box_clipped": 0,
+      "n_box_clipped_actives": 0,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 53,
+      "n_act_after_box_clipped_exclusion": 53,
+      "box_clipped": false,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 1,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 1,
+      "n_non_ok_other": 0,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 0,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": null,
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 53,
+      "n_act_after_prep_missing": 53,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 19.981,
+      "decoy_ratio_planned": 20.0,
+      "n_act_metadata": 53,
+      "n_dec_metadata": 1060,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "e381af7446dda1fad07c2868d3410394b3d58884dc469ce847685cea8f10e98b",
+      "exhaustiveness": 2,
+      "box_size_A": 22,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\FabI_Ec_decoys_s1.csv",
+      "n_inference_clusters": 53,
+      "n_active_clusters": 53,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.5187401959622568,
+      "auc_ci_hi": 0.6875982185448027,
+      "ef5_ci_lo": 0.0,
+      "ef5_ci_hi": 1.125,
+      "bedroc_ci_lo": 0.022161892983362318,
+      "bedroc_ci_hi": 0.0951583380507887,
+      "ef1_ci_lo": NaN,
+      "ef1_ci_hi": NaN,
+      "auc_ci_ligand_lo": 0.5396976327537594,
+      "auc_ci_ligand_hi": 0.6700103103177688,
+      "ef5_ci_ligand_lo": 0.0,
+      "ef5_ci_ligand_hi": 1.215743440233236,
+      "bedroc_ci_ligand_lo": 0.02297822588263918,
+      "bedroc_ci_ligand_hi": 0.09019964013661398,
+      "p_auc": 0.01164055696468324,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.6122947120200425,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.6224748113438017,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.6069459163630858,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.6074634083532403,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.5720754716981132,
+      "property_delta_vs_raw": {
+        "mw": 0.016483042676315396,
+        "logp": 0.0009541476955995387,
+        "hbd": 0.0014716396857540337,
+        "stratified_mean": 0.006302943352556212,
+        "matched": -0.03391629696937304
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\FabI_Ec\\manifest.csv",
+      "n_input_rows": 1112,
+      "source_files": [
+        "FabI_Ec_scores.csv"
+      ],
+      "p_auc_bh": 0.014966430383164166
+    },
+    {
+      "target": "GyrA_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "Mg",
+      "metal_stratum": "metal",
+      "panel_role": "low_confidence_auxiliary",
+      "auxiliary": true,
+      "n": 929,
+      "n_active": 73,
+      "n_decoy": 856,
+      "ef1_percent": null,
+      "ef1_allowed": false,
+      "ef1_suppressed": true,
+      "primary_metric": "EF5%",
+      "ef5_percent": 7.469624776652769,
+      "bedroc20": 0.5942586570626764,
+      "auc": 0.8559083344002049,
+      "top10_actives": 7.0,
+      "n_box_clipped": 0,
+      "n_box_clipped_actives": 0,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 73,
+      "n_act_after_box_clipped_exclusion": 73,
+      "box_clipped": false,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 2,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 2,
+      "n_non_ok_other": 0,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 0,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": null,
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 73,
+      "n_act_after_prep_missing": 73,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 11.726,
+      "decoy_ratio_planned": 11.753,
+      "n_act_metadata": 73,
+      "n_dec_metadata": 858,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "4aaaf70f6ef69f1f68b07918b50d654b4071f8688a6d1e1fde48cf6394d81e06",
+      "exhaustiveness": 2,
+      "box_size_A": 22,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\GyrA_Ec_decoys_s1.csv",
+      "n_inference_clusters": 73,
+      "n_active_clusters": 73,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.8106448066251981,
+      "auc_ci_hi": 0.9024605128628767,
+      "ef5_ci_lo": 5.50264257262217,
+      "ef5_ci_hi": 8.718443517967044,
+      "bedroc_ci_lo": 0.5055112830117967,
+      "bedroc_ci_hi": 0.6871388389535169,
+      "ef1_ci_lo": NaN,
+      "ef1_ci_hi": NaN,
+      "auc_ci_ligand_lo": 0.803472141933893,
+      "auc_ci_ligand_hi": 0.9053957131262482,
+      "ef5_ci_ligand_lo": 5.404387612327148,
+      "ef5_ci_ligand_hi": 9.01036789297659,
+      "bedroc_ci_ligand_lo": 0.4915628598248583,
+      "bedroc_ci_ligand_hi": 0.6957032249082135,
+      "p_auc": 2.1588912948336964e-36,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.7103887174712381,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.7514358316586822,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.660216431098705,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.7195138896563275,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.8954337899543379,
+      "property_delta_vs_raw": {
+        "mw": -0.10447250274152264,
+        "logp": -0.19569190330149988,
+        "hbd": -0.1363944447438774,
+        "stratified_mean": -0.14551961692896676,
+        "matched": 0.039525455554133004
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\GyrA_Ec\\manifest.csv",
+      "n_input_rows": 929,
+      "source_files": [
+        "GyrA_Ec_scores.csv"
+      ],
+      "p_auc_bh": 6.476673884501089e-36
+    },
+    {
+      "target": "GyrB_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "Mg",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "auxiliary": false,
+      "n": 1127,
+      "n_active": 75,
+      "n_decoy": 1052,
+      "ef1_percent": null,
+      "ef1_allowed": false,
+      "ef1_suppressed": true,
+      "primary_metric": "EF5%",
+      "ef5_percent": 0.0,
+      "bedroc20": 0.007608562681515664,
+      "auc": 0.3538910012674271,
+      "top10_actives": 0.0,
+      "n_box_clipped": 0,
+      "n_box_clipped_actives": 0,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 75,
+      "n_act_after_box_clipped_exclusion": 75,
+      "box_clipped": false,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 3,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 3,
+      "n_non_ok_other": 0,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 0,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": null,
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 75,
+      "n_act_after_prep_missing": 75,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 14.027,
+      "decoy_ratio_planned": 14.067,
+      "n_act_metadata": 75,
+      "n_dec_metadata": 1055,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "70fcad7b74bdf7231cf8dad975db8bee4639f1c228e89b05d3c538f58ea9f620",
+      "exhaustiveness": 2,
+      "box_size_A": 26,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\GyrB_Ec_decoys_s1.csv",
+      "n_inference_clusters": 75,
+      "n_active_clusters": 75,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.2976704125450502,
+      "auc_ci_hi": 0.40736426602826975,
+      "ef5_ci_lo": 0.0,
+      "ef5_ci_hi": 0.0,
+      "bedroc_ci_lo": 0.0016440112241190503,
+      "bedroc_ci_hi": 0.017502605959578074,
+      "ef1_ci_lo": NaN,
+      "ef1_ci_hi": NaN,
+      "auc_ci_ligand_lo": 0.29949909163972205,
+      "auc_ci_ligand_hi": 0.41225254464484945,
+      "ef5_ci_ligand_lo": 0.0,
+      "ef5_ci_ligand_hi": 0.0,
+      "bedroc_ci_ligand_lo": 0.0017366638495624255,
+      "bedroc_ci_ligand_hi": 0.01655310680741864,
+      "p_auc": 8.815792152520578e-07,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.3564292739916068,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.30215724059575355,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.31901198212065957,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.44811859925840725,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.35878787878787877,
+      "property_delta_vs_raw": {
+        "mw": -0.05173376067167357,
+        "logp": -0.034879019146767554,
+        "hbd": 0.09422759799098013,
+        "stratified_mean": 0.0025382727241796688,
+        "matched": 0.004896877520451648
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\GyrB_Ec\\manifest.csv",
+      "n_input_rows": 1127,
+      "source_files": [
+        "GyrB_Ec_scores.csv"
+      ],
+      "p_auc_bh": 1.3223688228780867e-06
+    },
+    {
+      "target": "Gyrase_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "Mg",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "auxiliary": false,
+      "n": 6282,
+      "n_active": 389,
+      "n_decoy": 5893,
+      "ef1_percent": 0.7690047741461623,
+      "ef1_allowed": true,
+      "ef1_suppressed": false,
+      "primary_metric": "EF1%",
+      "ef5_percent": 1.3886169010855862,
+      "bedroc20": 0.12260463488468379,
+      "auc": 0.5781444326129602,
+      "top10_actives": 0.0,
+      "n_box_clipped": 17,
+      "n_box_clipped_actives": 17,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 406,
+      "n_act_after_box_clipped_exclusion": 389,
+      "box_clipped": true,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 6,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 6,
+      "n_non_ok_other": 17,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 0,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": null,
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 406,
+      "n_act_after_prep_missing": 406,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 15.149,
+      "decoy_ratio_planned": 14.53,
+      "n_act_metadata": 406,
+      "n_dec_metadata": 5899,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "08d843350f521e6655172fad5ede2fd387ad9e5ad7bc9556f78fb44b05cb2f2b",
+      "exhaustiveness": 4,
+      "box_size_A": 26,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\Gyrase_Ec_decoys_s1.csv",
+      "n_inference_clusters": 389,
+      "n_active_clusters": 389,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.5480625511291657,
+      "auc_ci_hi": 0.6082861636250174,
+      "ef5_ci_lo": 0.9754981796499799,
+      "ef5_ci_hi": 1.954038684557719,
+      "bedroc_ci_lo": 0.09573528372750945,
+      "bedroc_ci_hi": 0.15383803639926252,
+      "ef1_ci_lo": 0.0,
+      "ef1_ci_hi": 1.79291829968955,
+      "auc_ci_ligand_lo": 0.5484485106937378,
+      "auc_ci_ligand_hi": 0.6074276102065497,
+      "ef5_ci_ligand_lo": 0.9525589052248455,
+      "ef5_ci_ligand_hi": 1.9506515166226503,
+      "bedroc_ci_ligand_lo": 0.09642287860556237,
+      "bedroc_ci_ligand_hi": 0.15240530156004634,
+      "p_auc": 5.079848481101894e-07,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.5740712472586142,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.5758784796358357,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.5700195243446761,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.576315737795331,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.5873154343730569,
+      "property_delta_vs_raw": {
+        "mw": -0.002265952977124508,
+        "logp": -0.008124908268284159,
+        "hbd": -0.0018286948176292617,
+        "stratified_mean": -0.004073185354345976,
+        "matched": 0.009171001760096664
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\Gyrase_Ec\\manifest.csv",
+      "n_input_rows": 6282,
+      "source_files": [
+        "Gyrase_Ec_scores.csv"
+      ],
+      "p_auc_bh": 9.143727265983408e-07
+    },
+    {
+      "target": "LepB_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "none",
+      "metal_stratum": "non-metal",
+      "panel_role": "auxiliary",
+      "auxiliary": true,
+      "n": 66,
+      "n_active": 6,
+      "n_decoy": 60,
+      "ef1_percent": null,
+      "ef1_allowed": false,
+      "ef1_suppressed": true,
+      "primary_metric": "EF5%",
+      "ef5_percent": 3.666666666666667,
+      "bedroc20": 0.3120808021320571,
+      "auc": 0.2916666666666667,
+      "top10_actives": 1.0,
+      "n_box_clipped": 21,
+      "n_box_clipped_actives": 21,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 27,
+      "n_act_after_box_clipped_exclusion": 6,
+      "box_clipped": true,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 0,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 0,
+      "n_non_ok_other": 21,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 2,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": "..\\results\\trackA\\full\\LepB_Ec\\rescue_boron_surrogate.csv",
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 27,
+      "n_act_after_prep_missing": 27,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 10.0,
+      "decoy_ratio_planned": 2.222,
+      "n_act_metadata": 27,
+      "n_dec_metadata": 60,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "84c159cacc73a7714f3864e482a492399e7fb9a4c619161c62273551e79ec928",
+      "exhaustiveness": 2,
+      "box_size_A": 26,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\LepB_Ec_decoys_s1.csv",
+      "n_inference_clusters": 6,
+      "n_active_clusters": 6,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.06666666666666667,
+      "auc_ci_hi": 0.575,
+      "ef5_ci_lo": 0.0,
+      "ef5_ci_hi": 7.666666666666667,
+      "bedroc_ci_lo": 5.1489659553858446e-08,
+      "bedroc_ci_hi": 0.7931574093109545,
+      "ef1_ci_lo": NaN,
+      "ef1_ci_hi": NaN,
+      "auc_ci_ligand_lo": 0.06509281678773204,
+      "auc_ci_ligand_hi": 0.6167069892473118,
+      "ef5_ci_ligand_lo": 0.0,
+      "ef5_ci_ligand_hi": 11.0,
+      "bedroc_ci_ligand_lo": 2.139172477766275e-08,
+      "bedroc_ci_ligand_hi": 0.7611743597080542,
+      "p_auc": 0.03173425610250915,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.20802933259073608,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.17923280423280422,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.22685185185185183,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.2180033416875522,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.2777777777777778,
+      "property_delta_vs_raw": {
+        "mw": -0.11243386243386247,
+        "logp": -0.06481481481481485,
+        "hbd": -0.07366332497911449,
+        "stratified_mean": -0.0836373340759306,
+        "matched": -0.013888888888888895
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\LepB_Ec\\manifest.csv",
+      "n_input_rows": 66,
+      "source_files": [
+        "LepB_Ec_scores.csv"
+      ],
+      "p_auc_bh": 0.03173425610250915
+    },
+    {
+      "target": "LpxC_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "Zn",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "auxiliary": false,
+      "n": 3645,
+      "n_active": 222,
+      "n_decoy": 3423,
+      "ef1_percent": 0.0,
+      "ef1_allowed": true,
+      "ef1_suppressed": false,
+      "primary_metric": "EF1%",
+      "ef5_percent": 0.09021384021384021,
+      "bedroc20": 0.006686519838802548,
+      "auc": 0.30040162862248754,
+      "top10_actives": 0.0,
+      "n_box_clipped": 0,
+      "n_box_clipped_actives": 0,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 222,
+      "n_act_after_box_clipped_exclusion": 222,
+      "box_clipped": false,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 11,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 11,
+      "n_non_ok_other": 0,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 0,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": null,
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 222,
+      "n_act_after_prep_missing": 222,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 15.419,
+      "decoy_ratio_planned": 15.468,
+      "n_act_metadata": 222,
+      "n_dec_metadata": 3434,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "2dacab5888e5ba19e40a8680c2e9b800a6e939e9a8933f3b4dc10c94c26a17c0",
+      "exhaustiveness": 4,
+      "box_size_A": 26,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\LpxC_Ec_decoys_s1.csv",
+      "n_inference_clusters": 222,
+      "n_active_clusters": 222,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.2679557083869771,
+      "auc_ci_hi": 0.3342717906228259,
+      "ef5_ci_lo": 0.0,
+      "ef5_ci_hi": 0.2708709547536363,
+      "bedroc_ci_lo": 0.00022372573406143493,
+      "bedroc_ci_hi": 0.02013803556507406,
+      "ef1_ci_lo": 0.0,
+      "ef1_ci_hi": 0.45057227835944047,
+      "auc_ci_ligand_lo": 0.2758388188373683,
+      "auc_ci_ligand_hi": 0.32660485493664704,
+      "ef5_ci_ligand_lo": 0.0,
+      "ef5_ci_ligand_hi": 0.29312088109164847,
+      "bedroc_ci_ligand_lo": 0.0002126086982022058,
+      "bedroc_ci_ligand_hi": 0.019779230034481725,
+      "p_auc": 2.2196421196032155e-37,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.3116232198921029,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.29938003695925014,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.33680700501088406,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.29868261770617444,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.33883883883883886,
+      "property_delta_vs_raw": {
+        "mw": -0.0010215916632373978,
+        "logp": 0.036405376388396526,
+        "hbd": -0.0017190109163131018,
+        "stratified_mean": 0.01122159126961536,
+        "matched": 0.038437210216351325
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\LpxC_Ec\\manifest.csv",
+      "n_input_rows": 3645,
+      "source_files": [
+        "LpxC_Ec_scores.csv"
+      ],
+      "p_auc_bh": 9.98838953821447e-37
+    },
+    {
+      "target": "LpxC_Pa",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "Zn",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "auxiliary": false,
+      "n": 6936,
+      "n_active": 418,
+      "n_decoy": 6518,
+      "ef1_percent": 4.569169960474309,
+      "ef1_allowed": true,
+      "ef1_suppressed": false,
+      "primary_metric": "EF1%",
+      "ef5_percent": 5.642678874288157,
+      "bedroc20": 0.4093874595898885,
+      "auc": 0.8524522081655365,
+      "top10_actives": 5.0,
+      "n_box_clipped": 0,
+      "n_box_clipped_actives": 0,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 418,
+      "n_act_after_box_clipped_exclusion": 418,
+      "box_clipped": false,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 9,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 9,
+      "n_non_ok_other": 0,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 0,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": null,
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 418,
+      "n_act_after_prep_missing": 418,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 15.593,
+      "decoy_ratio_planned": 15.615,
+      "n_act_metadata": 418,
+      "n_dec_metadata": 6527,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "55c1d24e320c090c5583583407ce543e3f82d6270084899de3064957d17f752a",
+      "exhaustiveness": 4,
+      "box_size_A": 22,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\LpxC_Pa_decoys_s1.csv",
+      "n_inference_clusters": 418,
+      "n_active_clusters": 418,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.8361188767847221,
+      "auc_ci_hi": 0.8686499776896629,
+      "ef5_ci_lo": 4.837333657083657,
+      "ef5_ci_hi": 6.406942543068979,
+      "bedroc_ci_lo": 0.369697196756709,
+      "bedroc_ci_hi": 0.4486211810822328,
+      "ef1_ci_lo": 3.1032781806294394,
+      "ef1_ci_hi": 6.477520757106669,
+      "auc_ci_ligand_lo": 0.8341776811847665,
+      "auc_ci_ligand_hi": 0.8702891621319034,
+      "ef5_ci_ligand_lo": 4.907863805035995,
+      "ef5_ci_ligand_hi": 6.4021853729663265,
+      "bedroc_ci_ligand_lo": 0.37053147570677586,
+      "bedroc_ci_ligand_hi": 0.4509719581392547,
+      "p_auc": 1.1927758803202862e-193,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.8516823792103992,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.8529390905232962,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.8524136162187151,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.8496944308891862,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.8477328923284416,
+      "property_delta_vs_raw": {
+        "mw": 0.00048688235775973254,
+        "logp": -3.859194682132028e-05,
+        "hbd": -0.002757777276350293,
+        "stratified_mean": -0.0007698289551372195,
+        "matched": -0.00471931583709484
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\LpxC_Pa\\manifest.csv",
+      "n_input_rows": 6936,
+      "source_files": [
+        "LpxC_Pa_scores.csv"
+      ],
+      "p_auc_bh": 1.0734982922882576e-192
+    },
+    {
+      "target": "TEM1_Ec",
+      "method": "vina",
+      "condition": "native",
+      "metal_dependent": "none",
+      "metal_stratum": "non-metal",
+      "panel_role": "main",
+      "auxiliary": false,
+      "n": 985,
+      "n_active": 91,
+      "n_decoy": 894,
+      "ef1_percent": null,
+      "ef1_allowed": false,
+      "ef1_suppressed": true,
+      "primary_metric": "EF5%",
+      "ef5_percent": 0.8836061897286387,
+      "bedroc20": 0.07787197594834525,
+      "auc": 0.42955478525948326,
+      "top10_actives": 0.0,
+      "n_box_clipped": 0,
+      "n_box_clipped_actives": 0,
+      "n_box_clipped_decoys": 0,
+      "n_act_before_box_clipped_exclusion": 91,
+      "n_act_after_box_clipped_exclusion": 91,
+      "box_clipped": false,
+      "box_clipped_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+      "n_prep_missing": 2,
+      "n_prep_missing_actives": 0,
+      "n_prep_missing_decoys": 2,
+      "n_non_ok_other": 0,
+      "n_non_ok_other_actives": 0,
+      "n_non_ok_other_decoys": 0,
+      "non_ok_other_actives_fraction": 0.0,
+      "non_ok_other_actives_warning": false,
+      "n_ok_reuse": 0,
+      "n_surrogate_actives": 23,
+      "n_surrogate_decoys": 0,
+      "surrogate_source": "..\\results\\trackA\\full\\TEM1_Ec\\rescue_boron_surrogate.csv",
+      "n_temporal_split_missing": 0,
+      "n_temporal_split_missing_actives": 0,
+      "n_actives_table_total": 91,
+      "n_act_after_prep_missing": 91,
+      "prep_missing_active_fraction": 0.0,
+      "prep_missing_actives_warning": false,
+      "decoy_ratio": 20,
+      "decoy_ratio_observed": 9.824,
+      "decoy_ratio_planned": 9.846,
+      "n_act_metadata": 91,
+      "n_dec_metadata": 896,
+      "sampling_seed": 42,
+      "decoy_subsample_sha256": "f2852184f0a33993ff6b9a1f5509713a9ea05d7fb4f2e3fc9bec90426a553d2c",
+      "exhaustiveness": 2,
+      "box_size_A": 22,
+      "metadata_source": "manifest",
+      "inference_unit": "active-cluster bootstrap (decoys grouped by matched active)",
+      "cluster_source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\TEM1_Ec_decoys_s1.csv",
+      "n_inference_clusters": 91,
+      "n_active_clusters": 91,
+      "n_unmatched_decoy_clusters": 0,
+      "auc_ci_lo": 0.3703909180890553,
+      "auc_ci_hi": 0.48824378770605803,
+      "ef5_ci_lo": 0.0,
+      "ef5_ci_hi": 1.7532051282051277,
+      "bedroc_ci_lo": 0.04122029253074099,
+      "bedroc_ci_hi": 0.1347749471917899,
+      "ef1_ci_lo": NaN,
+      "ef1_ci_hi": NaN,
+      "auc_ci_ligand_lo": 0.3615064650473658,
+      "auc_ci_ligand_hi": 0.4972832420405493,
+      "ef5_ci_ligand_lo": 0.0,
+      "ef5_ci_ligand_hi": 1.7109423816231208,
+      "bedroc_ci_ligand_lo": 0.03700260157077725,
+      "bedroc_ci_ligand_hi": 0.1258995371292059,
+      "p_auc": 0.019510029532497922,
+      "p_auc_interpretation": "descriptive only \u2014 ligand-level Hanley-McNeil; invalid under matched-decoy clustering (do not use for inference)",
+      "auc_property_stratified": 0.42803250054578085,
+      "auc_property_by_property": {
+        "mw": {
+          "auc": 0.398773233960904,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "logp": {
+          "auc": 0.46871204503676345,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        },
+        "hbd": {
+          "auc": 0.4166122226396751,
+          "coverage": 1.0,
+          "n_bins_used": 3
+        }
+      },
+      "auc_property_matched": 0.44572500670061643,
+      "property_delta_vs_raw": {
+        "mw": -0.030781551298579235,
+        "logp": 0.039157259777280184,
+        "hbd": -0.01294256261980814,
+        "stratified_mean": -0.0015222847137024154,
+        "matched": 0.01617022144113317
+      },
+      "property_sensitivity_method": "MW/logP/HBD quantile bins (3) weighted by bin size; nearest-decoy match in standardised property space",
+      "property_source": "..\\results\\trackA\\full\\TEM1_Ec\\manifest.csv",
+      "n_input_rows": 985,
+      "source_files": [
+        "TEM1_Ec_scores.csv"
+      ],
+      "p_auc_bh": 0.021948783224060162
+    }
+  ],
+  "by_metal_stratum": {
+    "metal": {
+      "n_entries": 5,
+      "targets": [
+        "GyrA_Ec",
+        "GyrB_Ec",
+        "Gyrase_Ec",
+        "LpxC_Ec",
+        "LpxC_Pa"
+      ],
+      "mean_auc": 0.5881595210137232,
+      "mean_ef5": 2.9182268784480705
+    },
+    "non-metal": {
+      "n_entries": 4,
+      "targets": [
+        "DHFR_Ec",
+        "FabI_Ec",
+        "LepB_Ec",
+        "TEM1_Ec"
+      ],
+      "mean_auc": 0.4982964227420776,
+      "mean_ef5": 1.687764725863485
+    }
+  },
+  "notes": [
+    "EF1% is reported only when n_active >= 150 (R1); otherwise ef1_percent=None and primary metric is EF5%.",
+    "EF5% is the enrichment factor at the top 5% (ratio; 2.0 = 2x).",
+    "BEDROC uses alpha=20; AUROC bootstrap is a ligand-level percentile bootstrap (2.5/97.5).",
+    "p_auc is Hanley-McNeil (AUROC vs 0.5), BH-adjusted within method across target entries.",
+    "Metal strata: LpxC=Zn, GyrA/GyrB=Mg, DHFR/FabI/LepB/TEM-1=none (evaluation.TARGET_METAL_DEPENDENCE)."
+  ],
+  "surrogate_sensitivity": {
+    "LepB_Ec": {
+      "source": "..\\results\\trackA\\full\\LepB_Ec\\rescue_boron_surrogate.csv",
+      "n_surrogate_actives": 2,
+      "n_surrogate_decoys": 0,
+      "with_surrogate": {
+        "auc": 0.2916666666666667,
+        "ef5_percent": 3.666666666666667,
+        "bedroc20": 0.3120808021320571,
+        "n_active": 6,
+        "n_decoy": 60
+      },
+      "without_surrogate": {
+        "auc": 0.125,
+        "auc_ci_cluster": [
+          0.025,
+          0.225
+        ],
+        "ef5_percent": 0.0,
+        "ef5_ci_cluster": [
+          0.0,
+          0.0
+        ],
+        "bedroc20": 2.406521350095085e-07,
+        "n_active": 4,
+        "n_decoy": 60
+      },
+      "delta_auc": -0.16666666666666669,
+      "delta_ef5": -3.666666666666667,
+      "n_act_main": 6,
+      "n_act_sensitivity": 4,
+      "pre_rescue_formal": {
+        "auc": 0.125,
+        "ef5_percent": 0.0,
+        "n_active": 4,
+        "note": "pre-rescue run had only non-surrogate actives; this equals the sensitivity arm"
+      },
+      "delta_auc_vs_pre_rescue": -0.16666666666666669,
+      "delta_ef5_vs_pre_rescue": -3.666666666666667,
+      "note": "main analysis includes B->C isosteric surrogates; this sensitivity excludes rescued ligands; difference reported for SI"
+    },
+    "TEM1_Ec": {
+      "source": "..\\results\\trackA\\full\\TEM1_Ec\\rescue_boron_surrogate.csv",
+      "n_surrogate_actives": 23,
+      "n_surrogate_decoys": 0,
+      "with_surrogate": {
+        "auc": 0.42955478525948326,
+        "ef5_percent": 0.8836061897286387,
+        "bedroc20": 0.07787197594834525,
+        "n_active": 91,
+        "n_decoy": 894
+      },
+      "without_surrogate": {
+        "auc": 0.40940419792077903,
+        "auc_ci_cluster": [
+          0.32574031270624854,
+          0.4858391084390813
+        ],
+        "ef5_percent": 0.8841911764705882,
+        "ef5_ci_cluster": [
+          0.0,
+          2.203313960873983
+        ],
+        "bedroc20": 0.06889223994275541,
+        "n_active": 68,
+        "n_decoy": 894
+      },
+      "delta_auc": -0.02015058733870423,
+      "delta_ef5": 0.0005849867419495114,
+      "n_act_main": 91,
+      "n_act_sensitivity": 68,
+      "pre_rescue_formal": {
+        "auc": 0.40940419792077903,
+        "ef5_percent": 0.8841911764705882,
+        "n_active": 68,
+        "note": "pre-rescue run had only non-surrogate actives; this equals the sensitivity arm"
+      },
+      "delta_auc_vs_pre_rescue": -0.02015058733870423,
+      "delta_ef5_vs_pre_rescue": 0.0005849867419495114,
+      "note": "main analysis includes B->C isosteric surrogates; this sensitivity excludes rescued ligands; difference reported for SI"
+    }
+  },
+  "surrogate_note": "25 boron-containing ligands were rescued with a B->C isosteric surrogate (Vina atom-type limitation); main analysis includes them and surrogate_sensitivity reports the exclude-surrogate sensitivity.",
+  "box_clipped_audit": {
+    "source": "D:\\harness\\projects\\d1_gramneg_vs\\data\\trackA\\box_clipped_ligands.csv",
+    "match_mode": "target+normalized_ligand_id",
+    "n_flagged_rows": 38,
+    "n_a_file_rows": 38,
+    "n_a_flags_matched_to_scores": 38,
+    "flag_match_rate": 1.0,
+    "unmatched_flag_ligands": [],
+    "rule": "max_dim_A > box_size_A -> box_clipped=True -> excluded from primary enrichment (Amendment #10)",
+    "by_target": [
+      {
+        "target": "DHFR_Ec",
+        "n_ligands": 7054,
+        "n_box_clipped": 0,
+        "n_box_clipped_actives": 0,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 383,
+        "n_act_after": 383,
+        "box_size_A": 22
+      },
+      {
+        "target": "FabI_Ec",
+        "n_ligands": 1112,
+        "n_box_clipped": 0,
+        "n_box_clipped_actives": 0,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 53,
+        "n_act_after": 53,
+        "box_size_A": 22
+      },
+      {
+        "target": "GyrA_Ec",
+        "n_ligands": 929,
+        "n_box_clipped": 0,
+        "n_box_clipped_actives": 0,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 73,
+        "n_act_after": 73,
+        "box_size_A": 22
+      },
+      {
+        "target": "GyrB_Ec",
+        "n_ligands": 1127,
+        "n_box_clipped": 0,
+        "n_box_clipped_actives": 0,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 75,
+        "n_act_after": 75,
+        "box_size_A": 26
+      },
+      {
+        "target": "Gyrase_Ec",
+        "n_ligands": 6299,
+        "n_box_clipped": 17,
+        "n_box_clipped_actives": 17,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 406,
+        "n_act_after": 389,
+        "box_size_A": 26
+      },
+      {
+        "target": "LepB_Ec",
+        "n_ligands": 87,
+        "n_box_clipped": 21,
+        "n_box_clipped_actives": 21,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 27,
+        "n_act_after": 6,
+        "box_size_A": 26
+      },
+      {
+        "target": "LpxC_Ec",
+        "n_ligands": 3645,
+        "n_box_clipped": 0,
+        "n_box_clipped_actives": 0,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 222,
+        "n_act_after": 222,
+        "box_size_A": 26
+      },
+      {
+        "target": "LpxC_Pa",
+        "n_ligands": 6936,
+        "n_box_clipped": 0,
+        "n_box_clipped_actives": 0,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 418,
+        "n_act_after": 418,
+        "box_size_A": 22
+      },
+      {
+        "target": "TEM1_Ec",
+        "n_ligands": 985,
+        "n_box_clipped": 0,
+        "n_box_clipped_actives": 0,
+        "n_box_clipped_decoys": 0,
+        "n_act_before": 91,
+        "n_act_after": 91,
+        "box_size_A": 22
+      }
+    ],
+    "note": "clipped ligands are not docked and cannot enter the primary enrichment denominators; SI reports n_box_clipped / n_box_clipped_actives / n_act_after"
+  },
+  "prep_missing_audit": {
+    "rule": "SMILES->3D failures (status=prep_missing) are excluded from enrichment denominators and reported separately; no result-based filtering",
+    "by_target": [
+      {
+        "target": "DHFR_Ec",
+        "n_prep_missing": 13,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 13,
+        "n_actives_table_total": 383,
+        "n_act_after_prep_missing": 383,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 13,
+        "metadata_n_rows": 7068,
+        "rows_seen_in_score_table": 7068,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "FabI_Ec",
+        "n_prep_missing": 1,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 1,
+        "n_actives_table_total": 53,
+        "n_act_after_prep_missing": 53,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 1,
+        "metadata_n_rows": 1113,
+        "rows_seen_in_score_table": 1113,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "GyrA_Ec",
+        "n_prep_missing": 2,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 2,
+        "n_actives_table_total": 73,
+        "n_act_after_prep_missing": 73,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 2,
+        "metadata_n_rows": 931,
+        "rows_seen_in_score_table": 931,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "GyrB_Ec",
+        "n_prep_missing": 3,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 3,
+        "n_actives_table_total": 75,
+        "n_act_after_prep_missing": 75,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 3,
+        "metadata_n_rows": 1130,
+        "rows_seen_in_score_table": 1130,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "Gyrase_Ec",
+        "n_prep_missing": 6,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 6,
+        "n_actives_table_total": 406,
+        "n_act_after_prep_missing": 406,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 6,
+        "metadata_n_rows": 6305,
+        "rows_seen_in_score_table": 6322,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "LepB_Ec",
+        "n_prep_missing": 0,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 0,
+        "n_actives_table_total": 27,
+        "n_act_after_prep_missing": 27,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 0,
+        "metadata_n_rows": 87,
+        "rows_seen_in_score_table": 108,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "LpxC_Ec",
+        "n_prep_missing": 11,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 11,
+        "n_actives_table_total": 222,
+        "n_act_after_prep_missing": 222,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 11,
+        "metadata_n_rows": 3656,
+        "rows_seen_in_score_table": 3656,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "LpxC_Pa",
+        "n_prep_missing": 9,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 9,
+        "n_actives_table_total": 418,
+        "n_act_after_prep_missing": 418,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 9,
+        "metadata_n_rows": 6945,
+        "rows_seen_in_score_table": 6945,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      },
+      {
+        "target": "TEM1_Ec",
+        "n_prep_missing": 2,
+        "n_prep_missing_actives": 0,
+        "n_prep_missing_decoys": 2,
+        "n_actives_table_total": 91,
+        "n_act_after_prep_missing": 91,
+        "prep_missing_active_fraction": 0.0,
+        "prep_missing_actives_warning": false,
+        "metadata_n_prep_missing": 2,
+        "metadata_n_rows": 987,
+        "rows_seen_in_score_table": 987,
+        "table_incomplete": false,
+        "metadata_mismatch": false,
+        "metadata_mismatch_pending_table_completion": false
+      }
+    ],
+    "warning_targets": [],
+    "note": "flag raised to Lead when prep_missing actives exceed 5% of a target's actives"
+  },
+  "data_quality_audit": {
+    "by_target": [
+      {
+        "target": "DHFR_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 1,
+        "n_actives_table_total": 383,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "FabI_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 53,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "GyrA_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 73,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "GyrB_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 75,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "Gyrase_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 406,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "LepB_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 27,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "LpxC_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 222,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "LpxC_Pa",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 418,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      },
+      {
+        "target": "TEM1_Ec",
+        "n_non_ok_other_actives": 0,
+        "n_non_ok_other_decoys": 0,
+        "n_actives_table_total": 91,
+        "non_ok_other_actives_fraction": 0.0,
+        "warning": false
+      }
+    ],
+    "warning_targets": [],
+    "note": "non-ok, non-prep_missing statuses (e.g. 'fail', 'box_clipped_not_docked') are excluded from enrichment denominators; targets with >5% actives affected are flagged for Lead review",
+    "boron_surrogate": {
+      "by_target": {
+        "LepB_Ec": {
+          "source": "..\\results\\trackA\\full\\LepB_Ec\\rescue_boron_surrogate.csv",
+          "n_surrogate_actives": 2,
+          "n_surrogate_decoys": 0,
+          "with_surrogate": {
+            "auc": 0.2916666666666667,
+            "ef5_percent": 3.666666666666667,
+            "bedroc20": 0.3120808021320571,
+            "n_active": 6,
+            "n_decoy": 60
+          },
+          "without_surrogate": {
+            "auc": 0.125,
+            "auc_ci_cluster": [
+              0.025,
+              0.225
+            ],
+            "ef5_percent": 0.0,
+            "ef5_ci_cluster": [
+              0.0,
+              0.0
+            ],
+            "bedroc20": 2.406521350095085e-07,
+            "n_active": 4,
+            "n_decoy": 60
+          },
+          "delta_auc": -0.16666666666666669,
+          "delta_ef5": -3.666666666666667,
+          "n_act_main": 6,
+          "n_act_sensitivity": 4,
+          "pre_rescue_formal": {
+            "auc": 0.125,
+            "ef5_percent": 0.0,
+            "n_active": 4,
+            "note": "pre-rescue run had only non-surrogate actives; this equals the sensitivity arm"
+          },
+          "delta_auc_vs_pre_rescue": -0.16666666666666669,
+          "delta_ef5_vs_pre_rescue": -3.666666666666667,
+          "note": "main analysis includes B->C isosteric surrogates; this sensitivity excludes rescued ligands; difference reported for SI"
+        },
+        "TEM1_Ec": {
+          "source": "..\\results\\trackA\\full\\TEM1_Ec\\rescue_boron_surrogate.csv",
+          "n_surrogate_actives": 23,
+          "n_surrogate_decoys": 0,
+          "with_surrogate": {
+            "auc": 0.42955478525948326,
+            "ef5_percent": 0.8836061897286387,
+            "bedroc20": 0.07787197594834525,
+            "n_active": 91,
+            "n_decoy": 894
+          },
+          "without_surrogate": {
+            "auc": 0.40940419792077903,
+            "auc_ci_cluster": [
+              0.32574031270624854,
+              0.4858391084390813
+            ],
+            "ef5_percent": 0.8841911764705882,
+            "ef5_ci_cluster": [
+              0.0,
+              2.203313960873983
+            ],
+            "bedroc20": 0.06889223994275541,
+            "n_active": 68,
+            "n_decoy": 894
+          },
+          "delta_auc": -0.02015058733870423,
+          "delta_ef5": 0.0005849867419495114,
+          "n_act_main": 91,
+          "n_act_sensitivity": 68,
+          "pre_rescue_formal": {
+            "auc": 0.40940419792077903,
+            "ef5_percent": 0.8841911764705882,
+            "n_active": 68,
+            "note": "pre-rescue run had only non-surrogate actives; this equals the sensitivity arm"
+          },
+          "delta_auc_vs_pre_rescue": -0.02015058733870423,
+          "delta_ef5_vs_pre_rescue": 0.0005849867419495114,
+          "note": "main analysis includes B->C isosteric surrogates; this sensitivity excludes rescued ligands; difference reported for SI"
+        }
+      },
+      "note": "main analysis includes B->C isosteric surrogates; exclude-surrogate arm is the SI sensitivity"
+    },
+    "notes": "TEM1/LepB \u787c\u9178\u7c7b actives \u56e0 Vina 1.2.5 \u65e0\u787c\u539f\u5b50\u7c7b\u578b\u5931\u8d25\uff0c\u7ecf B\u2192C isosteric surrogate \u8865\u6551\uff1b\u4e3b\u5206\u6790\u7eb3\u5165\uff0c\u654f\u611f\u6027\u6392\u9664\u540e\u7ed3\u679c\u53d8\u5316\uff1aLepB_Ec: n_act 6\u21924 when boron surrogates excluded; \u0394AUC(main\u2212exclude)=-0.1667\uff1bTEM1_Ec: n_act 91\u219268 when boron surrogates excluded; \u0394AUC(main\u2212exclude)=-0.0202\u3002"
+  },
+  "temporal_split_audit": {
+    "by_target": [
+      {
+        "target": "DHFR_Ec",
+        "n_rows": 7054,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "FabI_Ec",
+        "n_rows": 1112,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "GyrA_Ec",
+        "n_rows": 929,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "GyrB_Ec",
+        "n_rows": 1127,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "Gyrase_Ec",
+        "n_rows": 6299,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "LepB_Ec",
+        "n_rows": 87,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "LpxC_Ec",
+        "n_rows": 3645,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "LpxC_Pa",
+        "n_rows": 6936,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      },
+      {
+        "target": "TEM1_Ec",
+        "n_rows": 985,
+        "n_missing": 0,
+        "n_missing_actives": 0,
+        "n_missing_decoys": 0,
+        "known_values": [
+          "decoy",
+          "test",
+          "train"
+        ]
+      }
+    ],
+    "warning": false,
+    "note": "Amendment #9 novel-scaffold analysis needs temporal_split for actives; if actives are missing, B must re-merge by normalised ChEMBL id"
+  },
+  "decoy_ratio_summary": {
+    "min": 9.824,
+    "max": 19.981,
+    "median": 15.149,
+    "planned_min": 2.222,
+    "planned_max": 20.0,
+    "by_entry": {
+      "DHFR_Ec|native|vina": {
+        "observed": 17.418,
+        "planned": 17.454
+      },
+      "FabI_Ec|native|vina": {
+        "observed": 19.981,
+        "planned": 20.0
+      },
+      "GyrA_Ec|native|vina": {
+        "observed": 11.726,
+        "planned": 11.753
+      },
+      "GyrB_Ec|native|vina": {
+        "observed": 14.027,
+        "planned": 14.067
+      },
+      "Gyrase_Ec|native|vina": {
+        "observed": 15.149,
+        "planned": 14.53
+      },
+      "LepB_Ec|native|vina": {
+        "observed": 10.0,
+        "planned": 2.222
+      },
+      "LpxC_Ec|native|vina": {
+        "observed": 15.419,
+        "planned": 15.468
+      },
+      "LpxC_Pa|native|vina": {
+        "observed": 15.593,
+        "planned": 15.615
+      },
+      "TEM1_Ec|native|vina": {
+        "observed": 9.824,
+        "planned": 9.846
+      }
+    },
+    "note": "up to 20 matched decoys per active (deterministic seed 42; observed 9.82-19.98, median 15.15); per-target decoy_ratio_observed retained; planned values include prep-failed/box-clipped actives and are not the analysis denominator; EF/AUC computed on actual N"
+  },
+  "decoy_ratio_definition": "up to 20 matched decoys per active (deterministic seed 42; observed 9.82-19.98, median 15.15)",
+  "interpretation_notes": [
+    "Scoring performance is TARGET-SPECIFIC, not uniformly metal-determined: metal-dependent targets split into strong (LpxC_Pa (0.852)) and inverted (GyrB_Ec (0.354), LpxC_Ec (0.300)) outcomes; non-metal control(s): DHFR_Ec (0.666), FabI_Ec (0.606), TEM1_Ec (0.430). Candidate explanations: metal coordination, ligand property/chemotype concentration, activity strength, assay heterogeneity \u2014 no causal conclusion is drawn.",
+    "LpxC_Ec ligand-property contrast (A-line audit): actives HBD 4 vs decoys 3; median cLogP 1.64 vs 2.05 \u2014 ligand polarity differences may contribute to the inverted enrichment, alongside metal coordination.",
+    "LpxC_Ec property medians recomputed from manifests (actives vs decoys): HBD 4.0 vs 3.0, cLogP 1.64 vs 2.17, MW 429.0 vs 415.6.",
+    "GyrA_Ec is low_confidence_auxiliary (chemotype concentration: max BM scaffold 0.6575, n_documents 4, pChEMBL median 6.41, observed ratio 11.726); its AUC 0.856 is a chemotype/data artefact candidate and is excluded from all primary/stratum aggregates (SI only).",
+    "Stratum aggregates are heterogeneous and descriptive only (primary targets: DHFR_Ec, FabI_Ec, GyrB_Ec, Gyrase_Ec, LpxC_Ec, LpxC_Pa, TEM1_Ec); per-target reporting is primary. GyrA_Ec/LepB_Ec auxiliary targets are excluded from aggregates.",
+    "A non-metal control also shows AUROC < 0.5 \u2014 flag to Lead; this weakens any metal-specific interpretation and should be treated as a pipeline/assay check.",
+    "LpxC_Pa series exclusion: removing the largest BM scaffold (108 actives) gives AUC 0.835 (\u0394-0.017) and removing the largest ECFP4 cluster (119 actives) gives AUC 0.851 (\u0394-0.001); EF5 does not decrease (raw 5.643 \u2192 5.813/6.218). This does NOT support a chemotype-concentration explanation for Pa's high AUC; the LpxC_Ec vs LpxC_Pa difference is retained as a target/receptor/activity-space difference. Caveat: the two LpxC share 4,739 s1 decoys (60.3% of the Ec pool) and 48 shared actives; the cross-species axis uses the paired comparison on 951 shared scored decoys."
+  ],
+  "chemotype_evidence": [
+    {
+      "target": "LpxC_Ec",
+      "n_actives": 222,
+      "n_scaffolds_unique": 117,
+      "max_scaffold_frac": 0.1126,
+      "top5_scaffold_frac": 0.2568,
+      "n_ecfp_clusters": 51,
+      "max_ecfp_cluster_frac": 0.1216,
+      "top5_ecfp_cluster_frac": 0.4279,
+      "internal_maxT_median": 0.8027,
+      "pchembl_median": 7.52,
+      "n_documents": 16
+    },
+    {
+      "target": "LpxC_Pa",
+      "n_actives": 418,
+      "n_scaffolds_unique": 171,
+      "max_scaffold_frac": 0.2584,
+      "top5_scaffold_frac": 0.4187,
+      "n_ecfp_clusters": 51,
+      "max_ecfp_cluster_frac": 0.2847,
+      "top5_ecfp_cluster_frac": 0.6077,
+      "internal_maxT_median": 0.7963,
+      "pchembl_median": 8.45,
+      "n_documents": 13
+    },
+    {
+      "target": "DHFR_Ec",
+      "n_actives": 383,
+      "n_scaffolds_unique": 90,
+      "max_scaffold_frac": 0.3864,
+      "top5_scaffold_frac": 0.6449,
+      "n_ecfp_clusters": 90,
+      "max_ecfp_cluster_frac": 0.2219,
+      "top5_ecfp_cluster_frac": 0.4569,
+      "internal_maxT_median": 0.7619,
+      "pchembl_median": 7.34,
+      "n_documents": 39
+    },
+    {
+      "target": "GyrA_Ec",
+      "n_actives": 73,
+      "n_scaffolds_unique": 20,
+      "max_scaffold_frac": 0.6575,
+      "top5_scaffold_frac": 0.7945,
+      "n_ecfp_clusters": 8,
+      "max_ecfp_cluster_frac": 0.8082,
+      "top5_ecfp_cluster_frac": 0.9589,
+      "internal_maxT_median": 0.8718,
+      "pchembl_median": 6.41,
+      "n_documents": 4
+    },
+    {
+      "target": "GyrB_Ec",
+      "n_actives": 75,
+      "n_scaffolds_unique": 30,
+      "max_scaffold_frac": 0.1867,
+      "top5_scaffold_frac": 0.5867,
+      "n_ecfp_clusters": 15,
+      "max_ecfp_cluster_frac": 0.36,
+      "top5_ecfp_cluster_frac": 0.8267,
+      "internal_maxT_median": 0.85,
+      "pchembl_median": 7.33,
+      "n_documents": 9
+    },
+    {
+      "target": "FabI_Ec",
+      "n_actives": 53,
+      "n_scaffolds_unique": 28,
+      "max_scaffold_frac": 0.2642,
+      "top5_scaffold_frac": 0.5283,
+      "n_ecfp_clusters": 19,
+      "max_ecfp_cluster_frac": 0.2264,
+      "top5_ecfp_cluster_frac": 0.6604,
+      "internal_maxT_median": 0.7222,
+      "pchembl_median": 6.92,
+      "n_documents": 6
+    },
+    {
+      "target": "LepB_Ec",
+      "n_actives": 27,
+      "n_scaffolds_unique": 18,
+      "max_scaffold_frac": 0.1481,
+      "top5_scaffold_frac": 0.5185,
+      "n_ecfp_clusters": 6,
+      "max_ecfp_cluster_frac": 0.4815,
+      "top5_ecfp_cluster_frac": 0.963,
+      "internal_maxT_median": 0.8421,
+      "pchembl_median": 7.14,
+      "n_documents": 6
+    },
+    {
+      "target": "TEM1_Ec",
+      "n_actives": 91,
+      "n_scaffolds_unique": 42,
+      "max_scaffold_frac": 0.0989,
+      "top5_scaffold_frac": 0.3956,
+      "n_ecfp_clusters": 29,
+      "max_ecfp_cluster_frac": 0.0989,
+      "top5_ecfp_cluster_frac": 0.4176,
+      "internal_maxT_median": 0.7368,
+      "pchembl_median": 7.43,
+      "n_documents": 14
+    },
+    {
+      "target": "Gyrase_Ec",
+      "n_actives": 406,
+      "n_scaffolds_unique": 193,
+      "max_scaffold_frac": 0.0517,
+      "top5_scaffold_frac": 0.202,
+      "n_ecfp_clusters": 82,
+      "max_ecfp_cluster_frac": 0.1724,
+      "top5_ecfp_cluster_frac": 0.3966,
+      "internal_maxT_median": 0.82,
+      "pchembl_median": 6.88,
+      "n_documents": 42
+    }
+  ],
+  "decoy_overlap_evidence": [
+    {
+      "pair": "LpxC_Ec_vs_LpxC_Pa",
+      "n_ec": 7865,
+      "n_pa": 14866,
+      "n_intersection": 4739,
+      "jaccard": 0.2634,
+      "frac_pa_in_ec": 0.3188,
+      "frac_ec_in_pa": 0.6025
+    },
+    {
+      "pair": "actives_LpxC_Ec_vs_LpxC_Pa",
+      "n_ec": 222,
+      "n_pa": 418,
+      "n_intersection": 48,
+      "jaccard": 0.0811,
+      "frac_pa_in_ec": NaN,
+      "frac_ec_in_pa": NaN
+    }
+  ],
+  "supplementary_sensitivities": {
+    "property_sensitivity": {
+      "DHFR_Ec": {
+        "raw_auc": 0.6659724703746742,
+        "auc_property_stratified": 0.6672209349733574,
+        "auc_property_matched": 0.6483020075043661,
+        "delta_vs_raw": {
+          "mw": 0.005421809678748946,
+          "logp": 0.03128739599197772,
+          "hbd": -0.032963811874676896,
+          "stratified_mean": 0.0012484645986832188,
+          "matched": -0.017670462870308157
+        },
+        "panel_role": "main"
+      },
+      "FabI_Ec": {
+        "raw_auc": 0.6059917686674863,
+        "auc_property_stratified": 0.6122947120200425,
+        "auc_property_matched": 0.5720754716981132,
+        "delta_vs_raw": {
+          "mw": 0.016483042676315396,
+          "logp": 0.0009541476955995387,
+          "hbd": 0.0014716396857540337,
+          "stratified_mean": 0.006302943352556212,
+          "matched": -0.03391629696937304
+        },
+        "panel_role": "main"
+      },
+      "GyrA_Ec": {
+        "raw_auc": 0.8559083344002049,
+        "auc_property_stratified": 0.7103887174712381,
+        "auc_property_matched": 0.8954337899543379,
+        "delta_vs_raw": {
+          "mw": -0.10447250274152264,
+          "logp": -0.19569190330149988,
+          "hbd": -0.1363944447438774,
+          "stratified_mean": -0.14551961692896676,
+          "matched": 0.039525455554133004
+        },
+        "panel_role": "low_confidence_auxiliary"
+      },
+      "GyrB_Ec": {
+        "raw_auc": 0.3538910012674271,
+        "auc_property_stratified": 0.3564292739916068,
+        "auc_property_matched": 0.35878787878787877,
+        "delta_vs_raw": {
+          "mw": -0.05173376067167357,
+          "logp": -0.034879019146767554,
+          "hbd": 0.09422759799098013,
+          "stratified_mean": 0.0025382727241796688,
+          "matched": 0.004896877520451648
+        },
+        "panel_role": "main"
+      },
+      "Gyrase_Ec": {
+        "raw_auc": 0.5781444326129602,
+        "auc_property_stratified": 0.5740712472586142,
+        "auc_property_matched": 0.5873154343730569,
+        "delta_vs_raw": {
+          "mw": -0.002265952977124508,
+          "logp": -0.008124908268284159,
+          "hbd": -0.0018286948176292617,
+          "stratified_mean": -0.004073185354345976,
+          "matched": 0.009171001760096664
+        },
+        "panel_role": "main"
+      },
+      "LepB_Ec": {
+        "raw_auc": 0.2916666666666667,
+        "auc_property_stratified": 0.20802933259073608,
+        "auc_property_matched": 0.2777777777777778,
+        "delta_vs_raw": {
+          "mw": -0.11243386243386247,
+          "logp": -0.06481481481481485,
+          "hbd": -0.07366332497911449,
+          "stratified_mean": -0.0836373340759306,
+          "matched": -0.013888888888888895
+        },
+        "panel_role": "auxiliary"
+      },
+      "LpxC_Ec": {
+        "raw_auc": 0.30040162862248754,
+        "auc_property_stratified": 0.3116232198921029,
+        "auc_property_matched": 0.33883883883883886,
+        "delta_vs_raw": {
+          "mw": -0.0010215916632373978,
+          "logp": 0.036405376388396526,
+          "hbd": -0.0017190109163131018,
+          "stratified_mean": 0.01122159126961536,
+          "matched": 0.038437210216351325
+        },
+        "panel_role": "main"
+      },
+      "LpxC_Pa": {
+        "raw_auc": 0.8524522081655365,
+        "auc_property_stratified": 0.8516823792103992,
+        "auc_property_matched": 0.8477328923284416,
+        "delta_vs_raw": {
+          "mw": 0.00048688235775973254,
+          "logp": -3.859194682132028e-05,
+          "hbd": -0.002757777276350293,
+          "stratified_mean": -0.0007698289551372195,
+          "matched": -0.00471931583709484
+        },
+        "panel_role": "main"
+      },
+      "TEM1_Ec": {
+        "raw_auc": 0.42955478525948326,
+        "auc_property_stratified": 0.42803250054578085,
+        "auc_property_matched": 0.44572500670061643,
+        "delta_vs_raw": {
+          "mw": -0.030781551298579235,
+          "logp": 0.039157259777280184,
+          "hbd": -0.01294256261980814,
+          "stratified_mean": -0.0015222847137024154,
+          "matched": 0.01617022144113317
+        },
+        "panel_role": "main"
+      }
+    },
+    "pa_series_exclusion": {
+      "raw": {
+        "auc": 0.8524522081655365,
+        "ef5_percent": 5.642678874288157,
+        "n_active": 418
+      },
+      "largest_bm_scaffold": {
+        "scaffold": "c1ccc(-c2ccccc2)cc1",
+        "n_excluded": 108,
+        "auc_after": 0.8350530540735829,
+        "ef5_after": 5.813262699839182,
+        "delta_auc_vs_raw": -0.017399154091953584
+      },
+      "largest_ecfp_cluster": {
+        "n_excluded": 119,
+        "auc_after": 0.8510469079195149,
+        "ef5_after": 6.217999391912436,
+        "delta_auc_vs_raw": -0.0014053002460215902
+      },
+      "note": "Exclusion sensitivity only \u2014 the main panel keeps all actives; this checks whether Pa enrichment is driven by its dominant chemotype series.",
+      "interpretation": "LpxC_Pa series exclusion: removing the largest BM scaffold (108 actives) gives AUC 0.835 (\u0394-0.017) and removing the largest ECFP4 cluster (119 actives) gives AUC 0.851 (\u0394-0.001); EF5 does not decrease (raw 5.643 \u2192 5.813/6.218). This does NOT support a chemotype-concentration explanation for Pa's high AUC; the LpxC_Ec vs LpxC_Pa difference is retained as a target/receptor/activity-space difference. Caveat: the two LpxC share 4,739 s1 decoys (60.3% of the Ec pool) and 48 shared actives; the cross-species axis uses the paired comparison on 951 shared scored decoys."
+    },
+    "shared_decoy_paired": {
+      "n_shared_scored_decoys": 951,
+      "n_ec_scored_decoys": 3423,
+      "n_pa_scored_decoys": 6518,
+      "auc_ec_shared": 0.280738151400612,
+      "auc_pa_shared": 0.8095734029654003,
+      "delta_pa_minus_ec": 0.5288352515647883,
+      "note": "AUROC on the same scored decoy IDs for both targets; decoy sets are not identical to the full panel and this is a sensitivity check, not a replacement."
+    },
+    "boron_surrogate_sensitivity": {
+      "LepB_Ec": {
+        "source": "..\\results\\trackA\\full\\LepB_Ec\\rescue_boron_surrogate.csv",
+        "n_surrogate_actives": 2,
+        "n_surrogate_decoys": 0,
+        "with_surrogate": {
+          "auc": 0.2916666666666667,
+          "ef5_percent": 3.666666666666667,
+          "bedroc20": 0.3120808021320571,
+          "n_active": 6,
+          "n_decoy": 60
+        },
+        "without_surrogate": {
+          "auc": 0.125,
+          "auc_ci_cluster": [
+            0.025,
+            0.225
+          ],
+          "ef5_percent": 0.0,
+          "ef5_ci_cluster": [
+            0.0,
+            0.0
+          ],
+          "bedroc20": 2.406521350095085e-07,
+          "n_active": 4,
+          "n_decoy": 60
+        },
+        "delta_auc": -0.16666666666666669,
+        "delta_ef5": -3.666666666666667,
+        "n_act_main": 6,
+        "n_act_sensitivity": 4,
+        "pre_rescue_formal": {
+          "auc": 0.125,
+          "ef5_percent": 0.0,
+          "n_active": 4,
+          "note": "pre-rescue run had only non-surrogate actives; this equals the sensitivity arm"
+        },
+        "delta_auc_vs_pre_rescue": -0.16666666666666669,
+        "delta_ef5_vs_pre_rescue": -3.666666666666667,
+        "note": "main analysis includes B->C isosteric surrogates; this sensitivity excludes rescued ligands; difference reported for SI"
+      },
+      "TEM1_Ec": {
+        "source": "..\\results\\trackA\\full\\TEM1_Ec\\rescue_boron_surrogate.csv",
+        "n_surrogate_actives": 23,
+        "n_surrogate_decoys": 0,
+        "with_surrogate": {
+          "auc": 0.42955478525948326,
+          "ef5_percent": 0.8836061897286387,
+          "bedroc20": 0.07787197594834525,
+          "n_active": 91,
+          "n_decoy": 894
+        },
+        "without_surrogate": {
+          "auc": 0.40940419792077903,
+          "auc_ci_cluster": [
+            0.32574031270624854,
+            0.4858391084390813
+          ],
+          "ef5_percent": 0.8841911764705882,
+          "ef5_ci_cluster": [
+            0.0,
+            2.203313960873983
+          ],
+          "bedroc20": 0.06889223994275541,
+          "n_active": 68,
+          "n_decoy": 894
+        },
+        "delta_auc": -0.02015058733870423,
+        "delta_ef5": 0.0005849867419495114,
+        "n_act_main": 91,
+        "n_act_sensitivity": 68,
+        "pre_rescue_formal": {
+          "auc": 0.40940419792077903,
+          "ef5_percent": 0.8841911764705882,
+          "n_active": 68,
+          "note": "pre-rescue run had only non-surrogate actives; this equals the sensitivity arm"
+        },
+        "delta_auc_vs_pre_rescue": -0.02015058733870423,
+        "delta_ef5_vs_pre_rescue": 0.0005849867419495114,
+        "note": "main analysis includes B->C isosteric surrogates; this sensitivity excludes rescued ligands; difference reported for SI"
+      }
+    }
+  },
+  "methods_evidence": {
+    "chemotype_internal_maxT_median": {
+      "LpxC_Ec": 0.8027,
+      "LpxC_Pa": 0.7963,
+      "DHFR_Ec": 0.7619,
+      "GyrA_Ec": 0.8718,
+      "GyrB_Ec": 0.85,
+      "FabI_Ec": 0.7222,
+      "LepB_Ec": 0.8421,
+      "TEM1_Ec": 0.7368,
+      "Gyrase_Ec": 0.82
+    },
+    "top5_scaffold_frac": {
+      "LpxC_Ec": 0.2568,
+      "LpxC_Pa": 0.4187,
+      "DHFR_Ec": 0.6449,
+      "GyrA_Ec": 0.7945,
+      "GyrB_Ec": 0.5867,
+      "FabI_Ec": 0.5283,
+      "LepB_Ec": 0.5185,
+      "TEM1_Ec": 0.3956,
+      "Gyrase_Ec": 0.202
+    },
+    "top5_ecfp_cluster_frac": {
+      "LpxC_Ec": 0.4279,
+      "LpxC_Pa": 0.6077,
+      "DHFR_Ec": 0.4569,
+      "GyrA_Ec": 0.9589,
+      "GyrB_Ec": 0.8267,
+      "FabI_Ec": 0.6604,
+      "LepB_Ec": 0.963,
+      "TEM1_Ec": 0.4176,
+      "Gyrase_Ec": 0.3966
+    },
+    "shared_decoy_intersection_lpxc": 4739,
+    "si_chemotype_table": "data/trackA/si_chemotype_table.csv",
+    "pa_exclude_top_series": "data/trackA/LpxC_Pa_sensitivity_exclude_top.csv",
+    "note": "Methods/SI additions: internal max Tanimoto median, top-5 scaffold/ECFP cluster shares, shared decoy intersection",
+    "boron_surrogate_note": "boron-containing ligands (TEM1 23, LepB 2) failed Vina 1.2.5 atom-type B and were rescued with a B->C isosteric surrogate; main analysis includes them and supplementary_sensitivities.boron_surrogate_sensitivity reports the exclude-surrogate arm."
+  },
+  "novel_scaffold_audit": {
+    "by_target": [
+      {
+        "target": "DHFR_Ec",
+        "n_novel_split_rows": 23,
+        "n_test_actives_in_score_table": 39,
+        "n_matched_to_score_table": 23,
+        "linkage_fraction": 0.5897435897435898
+      },
+      {
+        "target": "FabI_Ec",
+        "n_novel_split_rows": 6,
+        "n_test_actives_in_score_table": 10,
+        "n_matched_to_score_table": 6,
+        "linkage_fraction": 0.6
+      },
+      {
+        "target": "GyrA_Ec",
+        "n_novel_split_rows": 9,
+        "n_test_actives_in_score_table": 9,
+        "n_matched_to_score_table": 9,
+        "linkage_fraction": 1.0
+      },
+      {
+        "target": "GyrB_Ec",
+        "n_novel_split_rows": 18,
+        "n_test_actives_in_score_table": 19,
+        "n_matched_to_score_table": 18,
+        "linkage_fraction": 0.9473684210526315
+      },
+      {
+        "target": "Gyrase_Ec",
+        "n_novel_split_rows": 60,
+        "n_test_actives_in_score_table": 89,
+        "n_matched_to_score_table": 60,
+        "linkage_fraction": 0.6741573033707865
+      },
+      {
+        "target": "LepB_Ec",
+        "n_novel_split_rows": 1,
+        "n_test_actives_in_score_table": 1,
+        "n_matched_to_score_table": 1,
+        "linkage_fraction": 1.0
+      },
+      {
+        "target": "LpxC_Ec",
+        "n_novel_split_rows": 6,
+        "n_test_actives_in_score_table": 13,
+        "n_matched_to_score_table": 6,
+        "linkage_fraction": 0.46153846153846156
+      },
+      {
+        "target": "LpxC_Pa",
+        "n_novel_split_rows": 24,
+        "n_test_actives_in_score_table": 28,
+        "n_matched_to_score_table": 24,
+        "linkage_fraction": 0.8571428571428571
+      },
+      {
+        "target": "TEM1_Ec",
+        "n_novel_split_rows": 31,
+        "n_test_actives_in_score_table": 33,
+        "n_matched_to_score_table": 31,
+        "linkage_fraction": 0.9393939393939394
+      }
+    ],
+    "n_novel_total_in_splits": 178,
+    "n_matched_total": 178,
+    "note": "Amendment #9 strict-transfer subset; matching is by normalised ChEMBL id against score-table actives with temporal_split='test'"
+  },
+  "panel": {
+    "expected_targets": [
+      "LpxC_Ec",
+      "LpxC_Pa",
+      "DHFR_Ec",
+      "Gyrase_Ec",
+      "GyrA_Ec",
+      "GyrB_Ec",
+      "FabI_Ec",
+      "LepB_Ec",
+      "TEM1_Ec"
+    ],
+    "n_expected_targets": 9,
+    "done_targets": [
+      "DHFR_Ec",
+      "FabI_Ec",
+      "GyrA_Ec",
+      "GyrB_Ec",
+      "Gyrase_Ec",
+      "LepB_Ec",
+      "LpxC_Ec",
+      "LpxC_Pa",
+      "TEM1_Ec"
+    ],
+    "n_done_targets": 9,
+    "missing_targets": [],
+    "panel_complete": true,
+    "note": "formal trackA_enrichment_full.json is written only when panel_complete=true; otherwise the output is forced to a _dryrun file"
+  },
+  "panel_complete": true,
+  "missing_targets": [],
+  "panel_scope": {
+    "n_panel_targets": 9,
+    "n_primary_targets": 7,
+    "n_auxiliary": 2,
+    "n_actives_panel": 1748,
+    "n_actives_primary": 1648,
+    "primary_targets": [
+      "DHFR_Ec",
+      "FabI_Ec",
+      "GyrB_Ec",
+      "Gyrase_Ec",
+      "LpxC_Ec",
+      "LpxC_Pa",
+      "TEM1_Ec"
+    ],
+    "auxiliary_targets": [
+      "GyrA_Ec",
+      "LepB_Ec"
+    ],
+    "note": "main tables/figures/aggregates use the 7 primary targets only; GyrA_Ec and LepB_Ec are auxiliary and reported separately"
+  },
+  "primary_caliber": "includes_boron_surrogate",
+  "panel_ready_signal_present": false,
+  "inference": {
+    "primary_unit": "active-level cluster bootstrap (decoys grouped by matched active; each active its own cluster)",
+    "sensitivity_unit": "ligand-level bootstrap",
+    "cluster_sources": {
+      "DHFR_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\DHFR_Ec_decoys_s1.csv",
+      "FabI_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\FabI_Ec_decoys_s1.csv",
+      "GyrA_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\GyrA_Ec_decoys_s1.csv",
+      "GyrB_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\GyrB_Ec_decoys_s1.csv",
+      "Gyrase_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\Gyrase_Ec_decoys_s1.csv",
+      "LepB_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\LepB_Ec_decoys_s1.csv",
+      "LpxC_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\LpxC_Ec_decoys_s1.csv",
+      "LpxC_Pa": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\LpxC_Pa_decoys_s1.csv",
+      "TEM1_Ec": "D:\\harness\\projects\\d1_gramneg_vs\\data\\decoys\\TEM1_Ec_decoys_s1.csv"
+    },
+    "p_value_note": "p_auc / p_auc_bh are ligand-level Hanley-McNeil descriptive only \u2014 invalid under matched-decoy clustering; do not use for inference"
+  },
+  "metal_vs_nonmetal": {
+    "metal": {
+      "n_targets": 4,
+      "targets": [
+        "GyrB_Ec",
+        "Gyrase_Ec",
+        "LpxC_Ec",
+        "LpxC_Pa"
+      ],
+      "mean_auc": 0.5212223176671028,
+      "median_auc": 0.46601771694019367,
+      "mean_ef5": 1.7803774038968958,
+      "per_target": [
+        {
+          "target": "GyrB_Ec",
+          "auc": 0.3538910012674271,
+          "auc_ci_cluster": [
+            0.2976704125450502,
+            0.40736426602826975
+          ],
+          "ef5_percent": 0.0,
+          "ef5_ci_cluster": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "target": "Gyrase_Ec",
+          "auc": 0.5781444326129602,
+          "auc_ci_cluster": [
+            0.5480625511291657,
+            0.6082861636250174
+          ],
+          "ef5_percent": 1.3886169010855862,
+          "ef5_ci_cluster": [
+            0.9754981796499799,
+            1.954038684557719
+          ]
+        },
+        {
+          "target": "LpxC_Ec",
+          "auc": 0.30040162862248754,
+          "auc_ci_cluster": [
+            0.2679557083869771,
+            0.3342717906228259
+          ],
+          "ef5_percent": 0.09021384021384021,
+          "ef5_ci_cluster": [
+            0.0,
+            0.2708709547536363
+          ]
+        },
+        {
+          "target": "LpxC_Pa",
+          "auc": 0.8524522081655365,
+          "auc_ci_cluster": [
+            0.8361188767847221,
+            0.8686499776896629
+          ],
+          "ef5_percent": 5.642678874288157,
+          "ef5_ci_cluster": [
+            4.837333657083657,
+            6.406942543068979
+          ]
+        }
+      ]
+    },
+    "non-metal": {
+      "n_targets": 3,
+      "targets": [
+        "DHFR_Ec",
+        "FabI_Ec",
+        "TEM1_Ec"
+      ],
+      "mean_auc": 0.5671730081005478,
+      "median_auc": 0.6059917686674863,
+      "mean_ef5": 1.0281307455957578,
+      "per_target": [
+        {
+          "target": "DHFR_Ec",
+          "auc": 0.6659724703746742,
+          "auc_ci_cluster": [
+            0.6422515837401608,
+            0.6885286517255927
+          ],
+          "ef5_percent": 1.8261229742823544,
+          "ef5_ci_cluster": [
+            1.3043595662659795,
+            2.2960350055428327
+          ]
+        },
+        {
+          "target": "FabI_Ec",
+          "auc": 0.6059917686674863,
+          "auc_ci_cluster": [
+            0.5187401959622568,
+            0.6875982185448027
+          ],
+          "ef5_percent": 0.37466307277628036,
+          "ef5_ci_cluster": [
+            0.0,
+            1.125
+          ]
+        },
+        {
+          "target": "TEM1_Ec",
+          "auc": 0.42955478525948326,
+          "auc_ci_cluster": [
+            0.3703909180890553,
+            0.48824378770605803
+          ],
+          "ef5_percent": 0.8836061897286387,
+          "ef5_ci_cluster": [
+            0.0,
+            1.7532051282051277
+          ]
+        }
+      ]
+    },
+    "primary_caliber": "includes_boron_surrogate"
+  },
+  "aggregation_scope": {
+    "primary_targets_only": [
+      "DHFR_Ec",
+      "FabI_Ec",
+      "GyrB_Ec",
+      "Gyrase_Ec",
+      "LpxC_Ec",
+      "LpxC_Pa",
+      "TEM1_Ec"
+    ],
+    "auxiliary_excluded": [
+      "GyrA_Ec",
+      "LepB_Ec"
+    ],
+    "caveat": "heterogeneous; per-target reporting is primary; stratum aggregates are descriptive only and must not be used as evidence of a uniform metal effect. Candidate confounders: metal coordination, chemotype concentration (not supported for the LpxC Ec/Pa difference), activity strength, assay heterogeneity."
+  },
+  "primary_per_target": [
+    {
+      "target": "DHFR_Ec",
+      "metal_dependent": "none",
+      "metal_stratum": "non-metal",
+      "panel_role": "main",
+      "n": 7054,
+      "n_active": 383,
+      "auc": 0.6659724703746742,
+      "auc_ci_cluster": [
+        0.6422515837401608,
+        0.6885286517255927
+      ],
+      "ef5_percent": 1.8261229742823544,
+      "ef5_ci_cluster": [
+        1.3043595662659795,
+        2.2960350055428327
+      ],
+      "auc_property_stratified": 0.6672209349733574,
+      "auc_property_matched": 0.6483020075043661
+    },
+    {
+      "target": "FabI_Ec",
+      "metal_dependent": "none",
+      "metal_stratum": "non-metal",
+      "panel_role": "main",
+      "n": 1112,
+      "n_active": 53,
+      "auc": 0.6059917686674863,
+      "auc_ci_cluster": [
+        0.5187401959622568,
+        0.6875982185448027
+      ],
+      "ef5_percent": 0.37466307277628036,
+      "ef5_ci_cluster": [
+        0.0,
+        1.125
+      ],
+      "auc_property_stratified": 0.6122947120200425,
+      "auc_property_matched": 0.5720754716981132
+    },
+    {
+      "target": "GyrB_Ec",
+      "metal_dependent": "Mg",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "n": 1127,
+      "n_active": 75,
+      "auc": 0.3538910012674271,
+      "auc_ci_cluster": [
+        0.2976704125450502,
+        0.40736426602826975
+      ],
+      "ef5_percent": 0.0,
+      "ef5_ci_cluster": [
+        0.0,
+        0.0
+      ],
+      "auc_property_stratified": 0.3564292739916068,
+      "auc_property_matched": 0.35878787878787877
+    },
+    {
+      "target": "Gyrase_Ec",
+      "metal_dependent": "Mg",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "n": 6282,
+      "n_active": 389,
+      "auc": 0.5781444326129602,
+      "auc_ci_cluster": [
+        0.5480625511291657,
+        0.6082861636250174
+      ],
+      "ef5_percent": 1.3886169010855862,
+      "ef5_ci_cluster": [
+        0.9754981796499799,
+        1.954038684557719
+      ],
+      "auc_property_stratified": 0.5740712472586142,
+      "auc_property_matched": 0.5873154343730569
+    },
+    {
+      "target": "LpxC_Ec",
+      "metal_dependent": "Zn",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "n": 3645,
+      "n_active": 222,
+      "auc": 0.30040162862248754,
+      "auc_ci_cluster": [
+        0.2679557083869771,
+        0.3342717906228259
+      ],
+      "ef5_percent": 0.09021384021384021,
+      "ef5_ci_cluster": [
+        0.0,
+        0.2708709547536363
+      ],
+      "auc_property_stratified": 0.3116232198921029,
+      "auc_property_matched": 0.33883883883883886
+    },
+    {
+      "target": "LpxC_Pa",
+      "metal_dependent": "Zn",
+      "metal_stratum": "metal",
+      "panel_role": "main",
+      "n": 6936,
+      "n_active": 418,
+      "auc": 0.8524522081655365,
+      "auc_ci_cluster": [
+        0.8361188767847221,
+        0.8686499776896629
+      ],
+      "ef5_percent": 5.642678874288157,
+      "ef5_ci_cluster": [
+        4.837333657083657,
+        6.406942543068979
+      ],
+      "auc_property_stratified": 0.8516823792103992,
+      "auc_property_matched": 0.8477328923284416
+    },
+    {
+      "target": "TEM1_Ec",
+      "metal_dependent": "none",
+      "metal_stratum": "non-metal",
+      "panel_role": "main",
+      "n": 985,
+      "n_active": 91,
+      "auc": 0.42955478525948326,
+      "auc_ci_cluster": [
+        0.3703909180890553,
+        0.48824378770605803
+      ],
+      "ef5_percent": 0.8836061897286387,
+      "ef5_ci_cluster": [
+        0.0,
+        1.7532051282051277
+      ],
+      "auc_property_stratified": 0.42803250054578085,
+      "auc_property_matched": 0.44572500670061643
+    }
+  ],
+  "auxiliary_per_target": [
+    {
+      "target": "GyrA_Ec",
+      "panel_role": "low_confidence_auxiliary",
+      "n": 929,
+      "n_active": 73,
+      "auc": 0.8559083344002049,
+      "ef5_percent": 7.469624776652769,
+      "note": "low-confidence/auxiliary target; excluded from primary aggregates, SI only"
+    },
+    {
+      "target": "LepB_Ec",
+      "panel_role": "auxiliary",
+      "n": 66,
+      "n_active": 6,
+      "auc": 0.2916666666666667,
+      "ef5_percent": 3.666666666666667,
+      "note": "low-confidence/auxiliary target; excluded from primary aggregates, SI only"
+    }
+  ],
+  "dhfr_summary": {
+    "target": "DHFR_Ec",
+    "metal_stratum": "non-metal",
+    "n": 7054,
+    "n_active": 383,
+    "auc": 0.6659724703746742,
+    "auc_ci_cluster": [
+      0.6422515837401608,
+      0.6885286517255927
+    ],
+    "ef5_percent": 1.8261229742823544,
+    "ef5_ci_cluster": [
+      1.3043595662659795,
+      2.2960350055428327
+    ],
+    "bedroc20": 0.13140504285733898
+  },
+  "compute_settings": {
+    "amendment": "Amendments #7-#10 (FROZEN): main panel = up to 20 matched decoys per active (deterministic seed 42, decoy_subsample_sha256 recorded; observed 9.82-19.98, median 15.15) + Vina exhaustiveness 4; sensitivity arms = (a) LpxC_Ec/DHFR 1,000-ligand stratified subsets exh4 vs exh8, (b) decoy-ratio bootstrap subsampling 10:1/15:1/20:1 (no extra docking); non-EF1 targets exh2+20:1; box 26 A for LpxC_Ec/GyrB_Ec/Gyrase_Ec/LepB_Ec and 22 A otherwise (#8); box-clipped ligands excluded (#10); original 50:1 arm deleted; H1-H3 unchanged",
+    "decoy_ratio_values": [
+      20
+    ],
+    "observed_decoy_ratio_by_entry": {
+      "DHFR_Ec|native|vina": 17.418,
+      "FabI_Ec|native|vina": 19.981,
+      "GyrA_Ec|native|vina": 11.726,
+      "GyrB_Ec|native|vina": 14.027,
+      "Gyrase_Ec|native|vina": 15.149,
+      "LepB_Ec|native|vina": 10.0,
+      "LpxC_Ec|native|vina": 15.419,
+      "LpxC_Pa|native|vina": 15.593,
+      "TEM1_Ec|native|vina": 9.824
+    },
+    "sampling_seed_values": [
+      42
+    ],
+    "exhaustiveness_values": [
+      2,
+      4
+    ],
+    "panel_role_values": [
+      "auxiliary",
+      "low_confidence_auxiliary",
+      "main"
+    ],
+    "box_size_A_values": [
+      22,
+      26
+    ],
+    "box_clipped_rule": "max_dim_A > box_size_A -> excluded from primary enrichment (Amendment #10)",
+    "prep_missing_rule": "status=prep_missing -> excluded from enrichment denominators; counts reported as n_prep_missing / actives / decoys; warning if actives >5%",
+    "ef_definition": "EF(f) = (hits in top k / n_act) / (k / N), with k = max(1, round(f*N)) (D-line loader implementation); EF1 additionally gated on n_act>=150",
+    "dry_run": false,
+    "incomplete": false,
+    "metadata_manifest": "D:\\harness\\projects\\d1_gramneg_vs\\results\\trackA\\full\\target_metadata.csv",
+    "sampling_meta_targets": [],
+    "box_clipped_match_mode": "target+normalized_ligand_id",
+    "metadata_source_counts": {
+      "manifest": 9
+    }
+  },
+  "write_mode": "full"
+}

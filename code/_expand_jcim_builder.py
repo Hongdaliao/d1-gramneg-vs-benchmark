@@ -1,0 +1,65 @@
+from pathlib import Path
+p = Path(r"code/maes/build_jcim_style_draft.py")
+t = p.read_text(encoding="utf-8")
+repls = [
+("leaving 1,710 scored actives (1,631 primary) in the analysis table. Figure 1 shows",
+ "leaving 1,710 scored actives (1,631 primary) in the analysis table. The temporal split and cross-species comparison use the same panel: 951 shared scored decoys support a paired LpxC_Ec versus LpxC_Pa comparison, and the temporal axis compares a full time-split holdout with a novel-scaffold subset requiring ECFP4 maximum Tanimoto below 0.4 to training. These axes are descriptive and are reported in Figure 4 and Table 3. Figure 1 shows"),
+("The full AUC range across all nine targets is 0.292–0.856", "The full AUC range across all nine targets is 0.292–0.856"),
+("LepB (AUC 0.292) are auxiliary and are excluded from both aggregates and from any trend test.",
+ "LepB (AUC 0.292) are auxiliary and are excluded from both aggregates and from any trend test. Across all nine targets the AUC range is 0.292–0.856 and EF5% ranges from 0.00 (GyrB) to 7.47 (GyrA); these values are descriptive because the auxiliary targets contain only 6–73 actives."),
+("per-target p-values are not used for inference because matched decoys are not independent.",
+ "per-target p-values are not used for inference because matched decoys are not independent. Vinardo rescoring changed absolute AUC (LpxC_Ec 0.300 to 0.554, LpxC_Pa 0.852 to 0.918 and Gyrase 0.578 to 0.518) while target rankings remained moderately concordant (Spearman rho 0.65–0.84), so the single Vina engine is a sensitivity choice rather than a claim of scoring optimality."),
+("AcrB contributes 55 non-polymer poses in total; 34 carry the automated inhibitor label, but expert re-annotation identifies only four true inhibitors.",
+ "AcrB contributes 55 non-polymer poses in total; 34 carry the automated inhibitor label, but expert re-annotation identifies only four true inhibitors. Only 3/40 poses are interface-bound, and AcrB contributes 34 of the 40 main-panel poses, so apparent ligand-class effects are also target-composition effects; the class medians are descriptive and not tested."),
+("The main pooled set covers Vina, DiffDock, Boltz-2 and DrugCLIP across eight targets;",
+ "Per-target exceptions were substantial: DiffDock exceeded Vina on GyrB and TEM1 but fell below Vina on LpxC_Pa and GyrA, whereas Boltz-2 and DrugCLIP were lower on GyrA than on several other targets. The main pooled set covers Vina, DiffDock, Boltz-2 and DrugCLIP across eight targets;"),
+("The single-chain arm changed DiffDock AUC from 0.488 to 0.667 on GyrA and from 0.469 to 0.444 on FabI;",
+ "None of these differences supports a leading claim: confidence intervals for the paired differences include zero for four of five methods, and the single-chain arm changes only DiffDock receptor representation while leaving the Vina ordering unchanged. The single-chain arm changed DiffDock AUC from 0.488 to 0.667 on GyrA and from 0.469 to 0.444 on FabI;"),
+("The anchor is an appendix external-consistency check, not a validation claim.",
+ "The 15-set descriptive view gave EF5% ≥ 2 for 5/15 (33.3%), median AUC 0.547 and median EF5% 1.19; EF1% was reported for ALDH1 (1.21) and VDR (1.28) only, and the anchor remains an appendix consistency check, not a validation claim."),
+("MAES is retained only as a descriptive pose-quality score, not as a calibrated probability.",
+ "The complete-case sensitivity, stratified AUROC reversals (Vina 0.572 versus Vina-AFDB 0.454 and holo 0.572 versus predicted-receptor 0.454; PBP3 0.107 with rho +0.811) and the 14 non-assessable rows are reported in Table 2 and SI. MAES is retained only as a descriptive pose-quality score, not as a calibrated probability."),
+("The balanced method subset deliberately sacrifices panel-wide coverage for matched active-decoy pairs, and its 1:1 composition is not comparable to the full-panel enrichment values.",
+ "The balanced method subset deliberately sacrifices panel-wide coverage for matched active-decoy pairs, and its 1:1 composition is not comparable to the full-panel enrichment values; pooled subset values such as Vina 0.605 are interpreted only as method-class contrasts."),
+("The practical implication is that a target-specific pilot and a test-only 2D baseline remain necessary before a docking ranking is trusted.",
+ "The cross-species paired comparison (ΔAUC +0.5288, corrected CI 0.503–0.554) is not a transfer test; the two LpxC homologues differ strongly, and the interval describes the paired active-set contrast. The practical implication is that a target-specific pilot and a test-only 2D baseline remain necessary before a docking ranking is trusted."),
+("the all-valid n = 34 version contains 26 QC-excluded pairs and is not used as the headline.",
+ "the all-valid n = 34 version contains 26 QC-excluded pairs and is not used as the headline; using it would change the RMSD/PLIF conclusion."),
+("These costs do not disqualify the methods, but they change the appropriate claim: a method can be useful for triage without being a portable enrichment predictor.",
+ "These costs do not disqualify the methods, but they change the appropriate claim: a method can be useful for triage without being a portable enrichment predictor. CPU screening remains inexpensive, but GPU arms add scheduling and reproducibility costs, and pretrained DrugCLIP and Boltz-2 require model-weight and environment disclosure."),
+("They are intended as an audit protocol, not a guarantee of prospective success.",
+ "They are intended as an audit protocol, not a guarantee of prospective success; per-target pilots and confidence intervals require enough actives, and matched-decoy controls can themselves introduce bias."),
+("The released panel, decoy manifests, scores and analysis code are intended as an audit resource for such work and for groups comparing docking or co-folding tools before committing to a synthesis campaign.",
+ "The released panel, decoy manifests, scores and analysis code are intended as an audit resource for such work and for groups comparing docking or co-folding tools before committing to a synthesis campaign. A prospective test across several target classes with pre-registered enrichment and pose endpoints would be the appropriate next step."),
+# Methods expansion
+("Receptors were prepared from holo PDB entries with co-crystal-ligand centres; box sizes were 26 Å for LpxC_Ec, Gyrase, GyrB and LepB and 22 Å for the remaining targets.",
+ "Receptors were prepared from holo PDB entries with co-crystal-ligand centres; box sizes were 26 Å for LpxC_Ec, Gyrase, GyrB and LepB and 22 Å for the remaining targets. Auxiliary targets were retained for descriptive contrast but not for metal/non-metal aggregates, and a single box centre was used per receptor."),
+("Candidate decoys were filtered to ECFP4 maximum Tanimoto below 0.4 versus all target actives before property matching.",
+ "Candidate decoys were filtered to ECFP4 maximum Tanimoto below 0.4 versus all target actives before property matching. Ligands with no successful Vina pose or with box clipping were excluded from the method-axis subset, and all decoy sets were constructed before method scores were inspected."),
+("Predicted receptors used AlphaFold DB models aligned to the holo pocket; QC excluded 28 of 40 systems (21 ligand clashes and 7 TM-score below 0.70), leaving eight QC-passed pairs for the headline comparison.",
+ "Predicted receptors used AlphaFold DB models aligned to the holo pocket; QC excluded 28 of 40 systems (21 ligand clashes and 7 TM-score below 0.70), leaving eight QC-passed pairs for the headline comparison. The same receptor manifest was used across Vina, Uni-Dock and DiffDock main to avoid engine-specific receptor preparation."),
+("Uncertainty used a 2,000-resample active-level cluster bootstrap, with decoys grouped by matched active; per-target p-values are not used for inference.",
+ "Uncertainty used a 2,000-resample active-level cluster bootstrap, with decoys grouped by matched active; per-target p-values are not used for inference. The primary analysis used one receptor per target, with no receptor ensemble or induced-fit sampling."),
+("The common seven-target sensitivity set is reported for all methods.",
+ "The common seven-target sensitivity set is reported for all methods. The same 806 ligands were run without result filtering, and all failures are reported in S30."),
+("Thirteen complexes failed and are treated as not assessable.",
+ "Thirteen complexes failed and are treated as not assessable. No pose post-processing or rescoring was applied; confidence rank 1 was used exactly as produced."),
+("Top-5 recall and EF were not reported for this 20-ligand-per-target design.",
+ "Top-5 recall and EF were not reported for this 20-ligand-per-target design. The nested design reuses the first ten DiffDock actives per target and their matched decoys, so Boltz-2 is not an independent 806-ligand screen."),
+("The model and outputs are distributed under CC BY-NC 4.0, and train-test overlap with public actives cannot be excluded.",
+ "The model and outputs are distributed under CC BY-NC 4.0, and train-test overlap with public actives cannot be excluded. Scores were computed without target-specific fine-tuning, and the five failed decoys remain in coverage rather than being replaced."),
+("Membrane consistency was assessed from reference-relative geometry without molecular-dynamics simulations [23,24].",
+ "Membrane consistency was assessed from reference-relative geometry without molecular-dynamics simulations [23,24]. PoseBusters was used only for physics/chemistry validity; RMSD-like checks were excluded to avoid circularity."),
+("paired comparisons resample matched subset pairs rather than comparing independent confidence intervals.",
+ "paired comparisons resample matched subset pairs rather than comparing independent confidence intervals. No multiple-comparison correction or significance claim is made; per-target estimates are the primary descriptive unit."),
+("The method-axis addenda and amendment hashes are listed in S24; no threshold, method or sample was changed after observing the gate results.",
+ "The method-axis addenda and amendment hashes are listed in S24; no threshold, method or sample was changed after observing the gate results. The amendments and addenda document the pre-specified analysis plan and all deviations."),
+("SI tables S1–S31 document the panel, enrichments, W12 observations and related analyses.",
+ "SI tables S1–S31 document the panel, enrichments, MAES-gate observations and related analyses. The repository also includes the raw score tables and coverage files used for every pooled estimate."),
+]
+for old,new in repls:
+ if old not in t: print('MISSING',old[:100])
+ else: t=t.replace(old,new,1)
+# fix first methods subsection
+t=t.replace('**Data curation and panel.** Track A', '### Data curation and panel\n\nTrack A')
+p.write_text(t,encoding='utf-8'); print('patched')

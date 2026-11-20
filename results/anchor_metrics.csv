@@ -1,0 +1,16 @@
+﻿set,n_act_val,N_primary,auc,ef5,ef1,bedroc20,ef5_mean_3sub,ef5_cv_pct,ef5_ge2,ef1_ge2,n_act_ge150,descriptive_only,note,status
+ADRB2,4,84,0.4469,0.0,0.0,0.004,0.0,,False,False,False,True,"chain validation / tiny sample (4 actives), descriptive only",done
+ALDH1,1343,2343,0.5915,1.1929,1.2136,0.0005,1.2028,2.11,False,False,True,False,,done
+ESR1_ago,3,63,0.3444,0.0,0.0,0.0028,0.0,,False,False,False,True,,done
+ESR1_ant,25,525,0.5117,0.0,0.0,0.0003,0.0,,False,False,False,False,,done
+FEN1,91,1091,0.5887,1.3321,1.1989,0.0014,1.5541,11.66,False,False,False,False,,done
+GBA,41,861,0.621,3.4186,5.25,0.0033,3.2558,7.07,True,True,False,False,,done
+IDH1,9,189,0.5148,0.0,0.0,0.006,0.0,,False,False,False,False,,done
+KAT2A,48,1008,0.5029,2.1,2.1,0.0017,1.96,10.1,True,True,False,False,,done
+MAPK1,77,1077,0.5814,1.3195,1.3987,0.0012,1.0556,20.41,False,False,False,False,,done
+MTORC1,24,504,0.4644,0.84,0.0,0.0016,1.4,28.28,False,False,False,False,,done
+OPRK1,6,126,0.775,3.5,0.0,0.0234,3.5,0.0,True,False,False,True,,done
+PKM2,136,1136,0.5642,1.0441,0.7594,0.0011,1.243,22.63,False,False,False,False,,done
+PPARG,6,126,0.5472,3.5,0.0,0.0211,3.5,0.0,True,False,False,True,,done
+TP53,16,336,0.6069,3.9375,14.0,0.0112,3.9375,0.0,True,True,False,False,,done
+VDR,165,1165,0.4184,0.6087,1.2837,0.0006,0.6087,0.0,False,False,True,False,,done

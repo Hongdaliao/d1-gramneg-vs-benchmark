@@ -1,0 +1,34 @@
+{
+ "AC1_attempted": 15,
+ "AC1_completed": 15,
+ "AC2_eligible_sets_n_val_ge20": 9,
+ "AC2_ef5_ge2": 2,
+ "AC2_proportion": 0.222,
+ "AC2_pass_ge_30pct": false,
+ "AC2_set_list_eligible": [
+  "ALDH1",
+  "ESR1_ant",
+  "FEN1",
+  "GBA",
+  "KAT2A",
+  "MAPK1",
+  "MTORC1",
+  "PKM2",
+  "VDR"
+ ],
+ "AC2_sets_ef5_ge2": [
+  "GBA",
+  "KAT2A"
+ ],
+ "AC3_ef5_cv_pct_max": 28.28,
+ "AC3_pass_le_10pct": false,
+ "ef1_reported_sets": [
+  "ALDH1",
+  "VDR"
+ ],
+ "generated_at": "2026-11-19T06:30:14",
+ "protocol": "Amendment A2: 20:1 cap1000 inactives, 3 inactive subseeds, Vina seed 42, exhaustiveness 4, box 22^3; AC2 on sets with n_val>=20",
+ "notes": {
+  "ADRB2": "chain validation / tiny sample (4 actives), descriptive only"
+ }
+}

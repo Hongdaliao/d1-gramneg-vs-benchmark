@@ -1,0 +1,45 @@
+{
+  "script": "D:\\harness\\projects\\d1_gramneg_vs\\code\\data\\02_generate_decoys.py",
+  "date": "2026-11-16",
+  "chembl": "ChEMBL_37 (2026-05-01)",
+  "pool": {
+    "source": "ChEMBL molecule.json, mw_freebase 200-600 & alogp -1..5",
+    "target_size": 60000,
+    "cached": "F:\\d1_data\\d1_pool_chembl37.csv",
+    "n_after_filters": 59451,
+    "post_filters": "RDKit: MW 200-600, MolLogP -1..5, heavy atoms>=10, unique InChIKey, exclude Track A actives"
+  },
+  "tolerances": {
+    "strict": {
+      "mw": 25.0,
+      "logp": 1.0,
+      "hbd": 1,
+      "hba": 2,
+      "rotb": 1,
+      "charge": 0
+    },
+    "relaxed": {
+      "mw": 50.0,
+      "logp": 2.0,
+      "hbd": 2,
+      "hba": 3,
+      "rotb": 2,
+      "charge": 0
+    },
+    "rule": "per-active: strict if >=50 strict candidates, else relaxed"
+  },
+  "similarity": "ECFP4 (Morgan r=2, 2048 bit) max Tanimoto < 0.4 vs all target actives",
+  "n_decoys_per_active": 50,
+  "seeds": [
+    20261116,
+    20261117,
+    20261118
+  ],
+  "max_actives_for_decoys": 500,
+  "actives_subsample_seed": 20261116,
+  "excluded_targets": [
+    "BLA_Ec"
+  ],
+  "exclude_reason": "BLA_Ec (CHEMBL2026): strict cleaning yields 95 unique InChIKeys < 2000 -> large-data case, not in main panel",
+  "actives_source": "data/trackA/*_actives.csv (pchembl>=6, IC50/Ki/Kd, InChIKey-dedup)"
+}

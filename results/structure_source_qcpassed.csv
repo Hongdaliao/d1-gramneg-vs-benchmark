@@ -1,0 +1,9 @@
+pose_key,target,pdb_id,ligand_id,afdb_alignment_mode,excluded_predicted,tm_score,pocket_rmsd,holo_rmsd,afdb_rmsd,delta_rmsd_afdb_minus_holo,holo_plif,afdb_plif,delta_plif_afdb_minus_holo,holo_pb,afdb_pb
+AcrB_Ec|5JMN|FUA,AcrB_Ec,5JMN,FUA,single,False,0.841,1.0,6.141,1.562,-4.579,0.75,0.667,-0.083,True,True
+AcrB_Ec|6Q4N|FUA,AcrB_Ec,6Q4N,FUA,single,False,0.846,1.11,5.947,1.655,-4.292,1.0,0.667,-0.333,True,True
+AcrB_Ec|6Q4O|FUA,AcrB_Ec,6Q4O,FUA,single,False,0.854,1.66,2.686,1.73,-0.956,0.667,0.556,-0.111,True,True
+AcrB_Ec|6Q4P|FUA,AcrB_Ec,6Q4P,FUA,single,False,0.838,1.65,7.2,1.776,-5.424,0.556,0.333,-0.223,True,True
+AcrB_Ec|6ZO5|FUA,AcrB_Ec,6ZO5,FUA,single,False,0.86,1.56,6.828,1.816,-5.012,1.0,0.333,-0.667,True,True
+AcrB_Ec|6ZOD|FUA,AcrB_Ec,6ZOD,FUA,single,False,0.851,1.12,6.249,1.584,-4.665,0.875,0.571,-0.304,True,True
+LptB_Ec|6B89|NOV,LptB_Ec,6B89,NOV,single,False,0.961,1.27,2.047,2.437,0.39,1.0,0.6,-0.4,True,True
+MexB_Pa|21FP|CLM,MexB_Pa,21FP,CLM,single,False,0.959,1.95,4.799,1.392,-3.407,0.692,0.5,-0.192,False,False
